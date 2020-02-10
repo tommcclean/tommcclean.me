@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "node_modules": true,
+    ".nuxt": true,
+    "package-lock.json": true,
+    "jsconfig.json": true,
+    ".gitignore": true,
+    ".eslintrc.js": true,
+    ".editorconfig": true,
+    "middleware": true,
+    "assets": true
+  }
+}
