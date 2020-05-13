@@ -28,6 +28,7 @@ export default {
   color: white;
   font-style: italic;
   margin-bottom: 10px;
+  opacity: 0.8;
 }
 
 svg {

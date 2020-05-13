@@ -7,11 +7,11 @@
             Thomas William McClean
           </h1>
           <h2 class="subtitle">
-            Full-stack software engineer extraordinaire from Bristol, United Kingdom
+            Full-stack Software Engineer from Bristol, United Kingdom
           </h2>
 
           <tag icon="map-marker" text="Bristol, UK" />
-          <tag icon="briefcase" text="Full Stack Software Engineer at Just Eat" />
+          <tag icon="briefcase" text="Software Engineer @ Just Eat" />
           <tag icon="code" text="VueJS, .NETCore, AWS, Azure" />
         </div>
       </content-wrapper>
@@ -36,7 +36,7 @@ export default {
 <style scoped>
   .c-intro {
     position: relative;
-    height: 75vh;
+    height: 85vh;
     padding: 50px;
     display: flex;
     align-items: center;

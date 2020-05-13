@@ -8,5 +8,6 @@
 .c-content {
   width: 1000px;
   margin: 0 auto;
+  text-align: center;
 }
 </style>
