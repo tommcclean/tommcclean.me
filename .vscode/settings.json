@@ -8,6 +8,8 @@
     ".eslintrc.js": true,
     ".editorconfig": true,
     "middleware": true,
-    "assets": true
+    "assets": true,
+    "LICENSE": true,
+    ".vscode": true
   }
 }
