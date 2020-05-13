@@ -1,8 +1,19 @@
 <template>
   <div>
+    <navigator />
     <nuxt />
   </div>
 </template>
+
+<script>
+import Navigator from '@/components/navigator/navigator.vue'
+
+export default {
+  components: {
+    Navigator
+  }
+}
+</script>
 
 <style>
 html {
@@ -21,5 +32,9 @@ html {
 
 svg {
   font-size: 1rem;
+}
+
+.u-align-center {
+  text-align: center;
 }
 </style>
