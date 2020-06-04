@@ -35,11 +35,11 @@ export default {
 
 <style scoped>
   .c-intro {
-    position: relative;
-    height: 85vh;
-    padding: 50px;
     display: flex;
     align-items: center;
+    position: relative;
+    height: 100vh;
+    padding: 50px;
     background-image: url('/intro/globe.png');
     background-size: cover;
     background-position: center;
@@ -52,10 +52,12 @@ export default {
   }
 
   .c-intro .inner h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
   }
 
   .c-intro .inner h2 {
+    font-size: 1rem;
     margin-bottom: 20px;
   }
 </style>

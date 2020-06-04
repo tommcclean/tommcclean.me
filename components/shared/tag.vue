@@ -1,7 +1,10 @@
 <template>
-  <div class="tag">
-    <c-icon :icon="icon" />
-    <span v-text="text" />
+  <div class="c-tag">
+    <c-icon
+      :icon="icon" />
+
+    <span
+      v-text="text" />
   </div>
 </template>
 
@@ -21,12 +24,12 @@ export default {
 </script>
 
 <style scoped>
-.tag {
+.c-tag {
   display: inline-block;
   padding: 10px 20px;
   background-color: black;
   color: white;
-  font-style: italic;
+  font-size: 0.8rem;
   margin-bottom: 10px;
   opacity: 0.8;
 }

@@ -1,26 +1,31 @@
 <template>
-  <div>
-    <navigator />
-    <nuxt />
-  </div>
+  <nuxt />
 </template>
 
 <script>
-import Navigator from '@/components/navigator/navigator.vue'
+import SeoMixin from '@/mixins/seo.mixin.vue'
 
 export default {
-  components: {
-    Navigator
-  }
+  mixins: [
+    SeoMixin
+  ]
 }
 </script>
 
 <style>
 html {
-  font-family: 'Open-Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  font-family: 'Tomorrow', -apple-system, BlinkMacSystemFont, 'Segoe UI';
   font-size: 16px;
   word-spacing: 1px;
   background-color: black;
+}
+
+body {
+  font-family: 'Comfortaa', -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+
+h1 {
+  font-size: 1.5rem;
 }
 
 *,

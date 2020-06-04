@@ -13,8 +13,7 @@
   bottom: 0;
   display: flex;
   align-items: center;
-  padding: 30px;
-  z-index: 1030;
-  background: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.7);
 }
 </style>

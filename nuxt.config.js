@@ -1,30 +1,43 @@
 
 export default {
-  mode: 'universal',
+  buildModules: [
+    '@nuxtjs/eslint-module'
+  ],
+
+  css: [
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
+
   head: {
-    title: 'tommcclean.me',
+    title: 'Thomas William McClean | Portfolio',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'My home on the internet, see what I am getting up too...' }
+      { hid: 'description', name: 'description', content: 'The digital portfolio of Thomas William McClean' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
   loading: {
     color: '#fff'
   },
-  css: [
-    '@fortawesome/fontawesome-svg-core/styles.css'
+
+  mode: 'universal',
+
+  modules: [
+    '@nuxtjs/pwa',
+    'nuxt-webfontloader',
   ],
+
   plugins: [
     '~/plugins/fontawesome.plugin.js',
   ],
-  buildModules: [
-    '@nuxtjs/eslint-module'
-  ],
-  modules: [
-    '@nuxtjs/pwa'
-  ]
+
+  webfontloader: {
+    google: {
+      families: ['Comfortaa:400,400&display=swap']
+    }
+  }
 }
