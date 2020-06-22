@@ -1,7 +1,12 @@
 
 export default {
   buildModules: [
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxt/components'
+  ],
+
+  components: [
+    '~/components/'
   ],
 
   css: [
@@ -28,11 +33,11 @@ export default {
 
   modules: [
     '@nuxtjs/pwa',
-    'nuxt-webfontloader',
+    'nuxt-webfontloader'
   ],
 
   plugins: [
-    '~/plugins/fontawesome.plugin.js',
+    '~/plugins/fontawesome.plugin.js'
   ],
 
   webfontloader: {

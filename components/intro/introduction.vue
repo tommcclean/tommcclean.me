@@ -19,20 +19,6 @@
   </section>
 </template>
 
-<script>
-import Overlay from '@/components/shared/overlay.vue'
-import ContentWrapper from '@/components/shared/content-wrapper.vue'
-import tag from '@/components/shared/tag.vue'
-
-export default {
-  components: {
-    Overlay,
-    ContentWrapper,
-    tag
-  }
-}
-</script>
-
 <style scoped>
   .c-intro {
     display: flex;

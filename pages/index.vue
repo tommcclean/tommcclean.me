@@ -1,22 +1,12 @@
 <template>
   <div>
-    <intro />
+    <introduction />
 
     <div class="c-warning">
       <p>This website is now undergoing reconstruction, please check back later</p>
     </div>
   </div>
 </template>
-
-<script>
-import Intro from '@/components/intro/intro.vue'
-
-export default {
-  components: {
-    Intro
-  }
-}
-</script>
 
 <style scoped>
 .c-warning {
