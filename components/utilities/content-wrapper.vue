@@ -6,8 +6,7 @@
 
 <style scoped>
 .c-content {
-  width: 1000px;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
 }
