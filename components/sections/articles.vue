@@ -8,20 +8,20 @@
           <p>I am looking to write more frequently, so check back soon to see even more...</p>
 
           <div class="c-articles-wrapper a-fadeInDown">
-            <a href="https://dev.to/tommcclean/leverage-vue-and-nuxt-to-output-components-natively-for-websites-using-other-technologies-3pnh" target="_blank" class="c-article u-flexContainer">
-              <c-icon icon="link" class="fa-fw" />
-              <p>Leverage Vue and Nuxt to output components natively for websites using other technologies</p>
-            </a>
+            <article-link
+              link="https://dev.to/tommcclean/leverage-vue-and-nuxt-to-output-components-natively-for-websites-using-other-technologies-3pnh"
+              text="Leverage Vue and Nuxt to output components natively for websites using other technologies"
+              icon="link" />
 
-            <a href="https://dev.to/tommcclean/cmpct-io-why-is-it-safer-1ef9" target="_blank" class="c-article u-flexContainer">
-              <c-icon icon="link" class="fa-fw" />
-              <p>cmpct.io - Why is it safer?</p>
-            </a>
+            <article-link
+              link="https://dev.to/tommcclean/cmpct-io-why-is-it-safer-1ef9"
+              text="cmpct.io - Why is it safer?"
+              icon="link" />
 
-            <a href="https://dev.to/tommcclean/latest-project-cmpct-io-1im3" target="_blank" class="c-article u-flexContainer">
-              <c-icon icon="link" class="fa-fw" />
-              <p>Personal Project - cmpct.io</p>
-            </a>
+            <article-link
+              link="https://dev.to/tommcclean/latest-project-cmpct-io-1im3"
+              text="Personal Project - cmpct.io"
+              icon="link" />
           </div>
         </div>
       </content-wrapper>
@@ -36,31 +36,5 @@
 
   .c-articles-wrapper {
     margin-top: 40px;
-  }
-
-  .c-article {
-    width: 800px;
-    max-width: 90%;
-    margin: 0 auto;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 15px;
-    text-decoration: none;
-    margin-bottom: 10px;
-    transition: all 0.2s ease-in-out;
-    text-align: left;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    &:hover {
-      background-color: white;
-      color: black;
-    }
-
-    svg {
-      margin-right: 10px;
-    }
   }
 </style>
