@@ -39,6 +39,20 @@ export default {
     '~/plugins/fontawesome.plugin.js'
   ],
 
+  pwa: {
+    manifest: {
+      name: 'Thomas William McClean',
+      short_name: 'Thomas William McClean',
+      description: 'The digital portfolio of software engineer Thomas William McClean',
+      lang: 'en',
+      display: 'standalone',
+      orientation: 'portrait-primary',
+      start_url: 'https://www.tommcclean.me',
+      background_color: '#000000',
+      theme_color: '#000000'
+    }
+  },
+
   webfontloader: {
     google: {
       families: ['Comfortaa:400,400&display=swap']
