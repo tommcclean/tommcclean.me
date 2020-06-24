@@ -5,9 +5,7 @@ export default {
     '@nuxt/components'
   ],
 
-  components: [
-    '~/components/'
-  ],
+  components: true,
 
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css'
@@ -21,7 +19,8 @@ export default {
       { hid: 'description', name: 'description', content: 'The digital portfolio of Thomas William McClean' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'canonical', href: 'https://www.tommcclean.me/' }
     ]
   },
 

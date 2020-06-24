@@ -9,6 +9,7 @@
     "middleware": true,
     "assets": true,
     "LICENSE": true,
-    ".vscode": true
+    ".vscode": true,
+    ".eslintrc.js": true
   }
 }

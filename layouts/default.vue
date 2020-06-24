@@ -4,22 +4,17 @@
 
 <script>
 import '@/styles/animation.scss'
-import '@/styles/utilities.scss'
-import SeoMixin from '@/mixins/seo.mixin.vue'
 
-export default {
-  mixins: [
-    SeoMixin
-  ]
-}
+export default {}
 </script>
 
 <style lang="scss">
 html {
-  font-family: 'Tomorrow', -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  font-family: 'Comfortaa', -apple-system, BlinkMacSystemFont, 'Segoe UI';
   font-size: 15px;
   word-spacing: 1px;
   background-color: black;
+  color: white;
 
   @media (max-width: 767px) {
     font-size: 14px;
@@ -37,23 +32,6 @@ body {
   margin: 0;
 }
 
-svg {
-  font-size: 1rem;
-}
-
-.u-align-center {
-  text-align: center;
-}
-
-h1, h2, h3, h4, p, a {
-  user-select: none;
-}
-
-h1 {
-  font-size: 4rem;
-  margin-bottom: 25px;
-}
-
 .title {
   display: inline-block;
   background-color: white;
@@ -61,26 +39,61 @@ h1 {
   padding: 10px;
 }
 
+h1, h2, h3, h4, p, a {
+  user-select: none;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
 h2 {
   font-size: 3rem;
-  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 1.5rem;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 p {
   font-size: 1rem;
-  margin-bottom: 10px;
-  margin-left: 15px;
-  margin-right: 15px;
+}
+
+svg {
+  font-size: 1rem;
 }
 
 a {
   color: white;
 }
+
+.u-flexContainer {
+  display: flex;
+  align-items: center;
+}
+
+.u-flexGrow {
+  flex-grow: 1;
+}
+
+.u-imageBackground {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+}
+
+.u-positionRelative {
+  position: relative;
+}
+
+.u-fullHeight {
+  height: 100vh;
+}
+
 </style>

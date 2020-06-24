@@ -29,9 +29,9 @@ export default {
   display: inline-block;
   padding: 10px 20px;
   background-color: black;
-  color: white;
   font-size: 0.8rem;
   opacity: 0.8;
+  margin-bottom: 5px;
 }
 
 svg {

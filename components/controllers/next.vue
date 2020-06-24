@@ -39,7 +39,6 @@ export default {
   left: 0;
   right: 0;
   margin: 0 auto;
-  color: white;
   z-index: 20;
   text-align: center;
   cursor: pointer;
