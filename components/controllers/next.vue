@@ -3,7 +3,9 @@
     v-show="show"
     class="c-next a-bounceIn"
     @click="next">
-    <c-icon icon="chevron-circle-down" class="c-next-icon fa-fw" />
+    <c-icon
+      icon="chevron-circle-down"
+      class="c-next-icon fa-fw" />
   </div>
 </template>
 

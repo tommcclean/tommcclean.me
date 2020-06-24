@@ -3,16 +3,9 @@
     <overlay>
       <content-wrapper>
         <div class="u-flexGrow">
-          <h2 class="title">
-            Projects
-          </h2>
-          <h3 class="subtitle">
-            I am <i>always</i> working on something interesting.
-          </h3>
-
-          <p>
-            Building software is my job and my greatest hobby, I try to master new technologies with every project
-          </p>
+          <h2 class="title">Projects</h2>
+          <h3>I am <i>always</i> working on something interesting.</h3>
+          <p>Building software is my job and my greatest hobby, I try to master new technologies with every project</p>
 
           <div class="c-projects-projectsWrapper a-fadeInDown">
             <a href="https://cmpct.io" target="_blank" class="c-projects-projectItem">

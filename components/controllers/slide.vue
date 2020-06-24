@@ -31,9 +31,7 @@ export default {
   top: 0;
   left: 0;
   right: 0;
-  bottom: -10px;
-  overflow: hidden;
-  color: white;
+  bottom: 0;
 }
 
 .c-slide--active {

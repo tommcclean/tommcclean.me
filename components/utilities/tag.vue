@@ -31,7 +31,6 @@ export default {
   background-color: black;
   color: white;
   font-size: 0.8rem;
-  margin-bottom: 10px;
   opacity: 0.8;
 }
 

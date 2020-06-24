@@ -3,12 +3,8 @@
     <overlay>
       <content-wrapper>
         <div class="inner">
-          <h1 class="title a-fadeIn">
-            Thomas William McClean
-          </h1>
-          <h3 class="subtitle">
-            Full-stack Software Engineer from Bristol, United Kingdom
-          </h3>
+          <h1 class="title a-fadeIn">Thomas William McClean</h1>
+          <h3>Full-stack Software Engineer from Bristol, United Kingdom</h3>
 
           <tag icon="map-marker" text="Bristol, UK" />
           <tag icon="briefcase" text="Software Engineer @ Just Eat" />

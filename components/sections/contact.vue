@@ -3,12 +3,8 @@
     <overlay>
       <content-wrapper>
         <div class="u-flexGrow">
-          <h2 class="title">
-            Contact Me
-          </h2>
-          <h3 class="subtitle">
-            Looking to get in touch? No problem simply contact me using one of the methods below...
-          </h3>
+          <h2 class="title">Contact Me</h2>
+          <h3>Looking to get in touch? No problem simply contact me using one of the methods below...</h3>
 
           <c-icon icon="hard-hat" />
           <span>This page hasn't been finished yet...</span>
