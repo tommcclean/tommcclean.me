@@ -10,27 +10,27 @@
             <a href="https://cmpct.io" target="_blank" class="c-projects-projectItem">
               <img
                 class="c-projects-icon"
-                src="/icons/cmpct-io.png">
+                src="/projects/cmpct-io.png">
               <p>cmpct.io</p>
             </a>
             <a href="https://www.shineproject.io" target="_blank" class="c-projects-projectItem">
               <img
                 class="c-projects-icon"
-                src="/icons/shine-project-io.png">
+                src="/projects/shine-project-io.png">
               <p>ShineProject.io</p>
             </a>
 
             <a href="https://github.com/tommcclean/PortalCMS" target="_blank" class="c-projects-projectItem">
               <img
                 class="c-projects-icon"
-                src="/icons/portal.png">
+                src="/projects/portal.png">
               <p>Portal CMS</p>
             </a>
 
             <a href="https://www.rapidsurvey.io" target="_blank" class="c-projects-projectItem">
               <img
                 class="c-projects-icon"
-                src="/icons/rapid-survey-io.png">
+                src="/projects/rapid-survey-io.png">
               <p>RapidSurvey.io</p>
             </a>
           </div>
