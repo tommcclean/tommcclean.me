@@ -60,6 +60,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+h4 {
+  font-size: 1.5rem;
+}
+
 p {
   font-size: 1rem;
 }
@@ -70,6 +74,14 @@ svg {
 
 a {
   color: white;
+}
+
+p a {
+  margin: 0;
+}
+
+a svg {
+  margin-right: 5px;
 }
 
 .u-flexContainer {
@@ -94,6 +106,16 @@ a {
 
 .u-fullHeight {
   height: 100vh;
+}
+
+.u-hiddenMobile {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.u-mb-0 {
+  margin-bottom: 0;
 }
 
 </style>
