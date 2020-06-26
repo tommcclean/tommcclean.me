@@ -1,6 +1,10 @@
 <template>
   <section class="c-intro u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
     <overlay>
+      <profile-badge
+        href="https://www.instagram.com/thomaswilliammcclean/"
+        icon="instagram" />
+
       <content-wrapper>
         <div class="inner">
           <h1 class="title a-fadeIn">Thomas William McClean</h1>
