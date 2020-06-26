@@ -1,5 +1,5 @@
 <template functional>
-  <div class="c-overlay">
+  <div class="c-overlay u-flexContainer">
     <slot />
   </div>
 </template>
@@ -13,8 +13,6 @@
   bottom: 0;
   padding-top: 20px;
   padding-bottom: 50px;
-  display: flex;
-  align-items: center;
   z-index: 10;
   background: rgba(0, 0, 0, 0.7);
 

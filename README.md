@@ -12,3 +12,6 @@ $ npm run dev
 
 # Generate output for deployment
 $ npm run generate
+
+# Visit the deployed website
+https://www.tommcclean.me
