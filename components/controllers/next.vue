@@ -1,6 +1,6 @@
 <template>
   <div
-    v-show="show"
+    v-show="activeSlide < totalSlides"
     class="c-next a-bounceIn"
     @click="next">
     <c-icon
@@ -11,34 +11,25 @@
 
 <script>
 import { mapState, mapActions } from 'vuex'
+
 export default {
-  computed: {
-    ...mapState('slide', [
-      'activeSlide',
-      'totalSlides'
-    ]),
+  computed: mapState('slide', [
+    'activeSlide',
+    'totalSlides'
+  ]),
 
-    show () {
-      return (this.activeSlide < this.totalSlides)
-    }
-  },
-
-  methods: {
-    ...mapActions('slide', [
-      'next'
-    ])
-  }
+  methods: mapActions('slide', [
+    'next'
+  ])
 }
 </script>
 
 <style scoped lang="scss">
 .c-next {
   position: fixed;
-  display: inline-block;
-  bottom: 40px;
+  bottom: 20px;
   left: 0;
   right: 0;
-  margin: 0 auto;
   z-index: 20;
   text-align: center;
   cursor: pointer;
@@ -46,18 +37,16 @@ export default {
   @media (max-height: 400px) {
     display: none;
   }
-
-  @media (max-width: 1024px) {
-    bottom: 20px;
-  }
 }
 
 .c-next-icon {
   font-size: 3rem;
   transition: all 0.2s ease-in-out;
+  padding-bottom: 10px;
 
   &:hover {
     font-size: 3.5rem;
+    padding-bottom: 0;
   }
 }
 </style>

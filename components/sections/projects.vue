@@ -7,32 +7,25 @@
           <h3>I am <i>always</i> working on something interesting.</h3>
           <p>Building software is my job and a hobby, I master new technologies with every project. Check out my <a href="https://github.com/tommcclean" target="_blank"><c-icon :icon="['fab', 'github']" />Github</a> to see more!</p>
           <div class="c-projects-projectsWrapper a-fadeInDown">
-            <a href="https://cmpct.io" target="_blank" class="c-projects-projectItem">
-              <img
-                class="c-projects-icon"
-                src="/projects/cmpct-io.png">
-              <p>cmpct.io</p>
-            </a>
-            <a href="https://www.shineproject.io" target="_blank" class="c-projects-projectItem">
-              <img
-                class="c-projects-icon"
-                src="/projects/shine-project-io.png">
-              <p>ShineProject.io</p>
-            </a>
+            <project-item
+              text="cmpct.io"
+              image-source="/projects/cmpct-io.png"
+              href="https://cmpct.io" />
 
-            <a href="https://github.com/tommcclean/PortalCMS" target="_blank" class="c-projects-projectItem">
-              <img
-                class="c-projects-icon"
-                src="/projects/portal.png">
-              <p>Portal CMS</p>
-            </a>
+            <project-item
+              text="ShineProject.io"
+              image-source="/projects/shine-project-io.png"
+              href="https://www.shineproject.io" />
 
-            <a href="https://www.rapidsurvey.io" target="_blank" class="c-projects-projectItem">
-              <img
-                class="c-projects-icon"
-                src="/projects/rapid-survey-io.png">
-              <p>RapidSurvey.io</p>
-            </a>
+            <project-item
+              text="PortalCMS"
+              image-source="/projects/portal.png"
+              href="https://github.com/tommcclean/PortalCMS" />
+
+            <project-item
+              text="RapidSurvey.io"
+              image-source="/projects/rapid-survey-io.png"
+              href="https://www.rapidsurvey.io" />
           </div>
         </div>
       </content-wrapper>
@@ -47,17 +40,5 @@
 
   .c-projects-projectsWrapper {
     margin-top: 30px;
-  }
-
-  .c-projects-projectItem {
-    display: inline-block;
-    margin: 10px;
-  }
-
-  .c-projects-icon {
-    width: 100px;
-    height: 100px;
-    border-radius: 10px;
-    margin-bottom: 5px;
   }
 </style>

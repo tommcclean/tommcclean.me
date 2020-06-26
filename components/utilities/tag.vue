@@ -1,10 +1,10 @@
-<template>
+<template functional>
   <div class="c-tag">
     <c-icon
-      :icon="icon" />
+      :icon="props.icon" />
 
     <span
-      v-text="text" />
+      v-text="props.text" />
   </div>
 </template>
 
@@ -32,6 +32,7 @@ export default {
   font-size: 0.8rem;
   opacity: 0.8;
   margin-bottom: 5px;
+  user-select: none;
 }
 
 svg {
