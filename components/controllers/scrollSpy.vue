@@ -20,10 +20,10 @@
       icon="briefcase"
       :slide="4" />
 
-    <scroll-spy-option
+    <!-- <scroll-spy-option
       text="contact"
       icon="phone"
-      :slide="5" />
+      :slide="5" /> -->
   </div>
 </template>
 
