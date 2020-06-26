@@ -7,7 +7,7 @@
 
       <content-wrapper>
         <div class="inner">
-          <h1 class="title a-fadeIn">Thomas William McClean</h1>
+          <h1 class="title">Thomas William McClean</h1>
           <h3>Full-stack Software Engineer from Bristol, United Kingdom</h3>
 
           <tag icon="map-marker" text="Bristol, UK" />

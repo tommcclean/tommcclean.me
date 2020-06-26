@@ -2,7 +2,7 @@
   <div class="c-landscape u-flexContainer u-imageBackground">
     <overlay>
       <div class="u-flexGrow">
-        <h1 class="title a-fadeIn">Thomas William McClean</h1>
+        <h1 class="title">Thomas William McClean</h1>
         <h3>
           <c-icon icon="sync-alt" />
           <span>Please rotate your device to portrait</span>

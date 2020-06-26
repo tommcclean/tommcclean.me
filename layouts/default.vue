@@ -10,7 +10,7 @@ export default {}
 
 <style lang="scss">
 html {
-  font-family: 'Comfortaa', -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  font-family: 'Comfortaa', 'sans-serif';
   font-size: 15px;
   word-spacing: 1px;
   background-color: black;
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  font-family: 'Comfortaa', -apple-system, BlinkMacSystemFont, 'Segoe UI';
+  font-family: 'Comfortaa', 'sans-serif';
 }
 
 *,

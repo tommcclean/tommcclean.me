@@ -1,7 +1,7 @@
 <template>
   <div
     v-show="activeSlide < totalSlides"
-    class="c-next a-bounceIn"
+    class="c-next"
     @click="next">
     <c-icon
       icon="chevron-circle-down"

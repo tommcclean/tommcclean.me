@@ -2,7 +2,7 @@
   <a
     :href="props.href"
     target="_blank"
-    class="c-profileBadge a-bounceIn">
+    class="c-profileBadge">
     <c-icon
       :icon="['fab', props.icon]"
       class="fa-fw" />
