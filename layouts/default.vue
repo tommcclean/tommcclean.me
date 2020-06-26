@@ -3,8 +3,6 @@
 </template>
 
 <script>
-import '@/styles/animation.scss'
-
 export default {}
 </script>
 
@@ -118,4 +116,15 @@ a svg {
   margin-bottom: 0;
 }
 
+.slide-fade-enter-active {
+  transition: all 0.5s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+{
+  transform: translateX(10px);
+  opacity: 0;
+}
 </style>
