@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .c-projects-projectItem {
     display: inline-block;
     margin: 10px;
@@ -40,5 +40,11 @@ export default {
     height: 100px;
     border-radius: 10px;
     margin-bottom: 5px;
+
+    @media (max-width: 768px) {
+      width: 75px;
+      height: 75px;
+      margin: 0 20px 5px 20px;
+    }
   }
 </style>

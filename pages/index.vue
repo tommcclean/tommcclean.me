@@ -8,5 +8,6 @@
 
     <scroll-spy />
     <next />
+    <landscape />
   </slide-wrapper>
 </template>
