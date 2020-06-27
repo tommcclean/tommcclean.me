@@ -1,5 +1,5 @@
 <template>
-  <section class="c-projects u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
+  <div class="c-projects u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
     <overlay>
       <profile-badge
         href="https://github.com/tommcclean"
@@ -34,7 +34,7 @@
         </div>
       </content-wrapper>
     </overlay>
-  </section>
+  </div>
 </template>
 
 <style scoped>

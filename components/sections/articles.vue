@@ -1,5 +1,5 @@
 <template>
-  <section class="c-articles u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
+  <div class="c-articles u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
     <overlay>
       <profile-badge
         href="https://dev.to/tommcclean"
@@ -30,7 +30,7 @@
         </div>
       </content-wrapper>
     </overlay>
-  </section>
+  </div>
 </template>
 
 <style scoped lang="scss">

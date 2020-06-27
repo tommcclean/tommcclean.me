@@ -1,5 +1,5 @@
 <template>
-  <section class="c-intro u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
+  <div class="c-intro u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
     <overlay>
       <profile-badge
         href="https://www.instagram.com/thomaswilliammcclean/"
@@ -17,7 +17,7 @@
         </div>
       </content-wrapper>
     </overlay>
-  </section>
+  </div>
 </template>
 
 <style scoped>

@@ -1,10 +1,10 @@
 <template>
   <transition name="slide-fade">
-    <div
+    <section
       v-show="activeSlide === slideNumber"
       :class="['c-slide', { 'c-slide--active' : activeSlide === slideNumber }]">
       <slot />
-    </div>
+    </section>
   </transition>
 </template>
 

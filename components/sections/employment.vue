@@ -1,5 +1,5 @@
 <template>
-  <section class="c-employment u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
+  <div class="c-employment u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
     <overlay>
       <profile-badge
         href="https://www.linkedin.com/in/tommccleanuk"
@@ -41,7 +41,7 @@
         </div>
       </content-wrapper>
     </overlay>
-  </section>
+  </div>
 </template>
 
 <style scoped lang="scss">
