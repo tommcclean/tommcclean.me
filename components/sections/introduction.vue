@@ -13,6 +13,7 @@
           <tag icon="map-marker" text="Bristol, UK" />
           <tag icon="briefcase" text="Software Engineer @ Just Eat" />
           <tag icon="code" text="VueJS, .NETCore, AWS, Azure" />
+          <tag icon="heart" text="Football, Technology, Futurism, Science" />
         </div>
       </content-wrapper>
     </overlay>

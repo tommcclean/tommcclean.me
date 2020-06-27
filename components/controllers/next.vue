@@ -43,10 +43,5 @@ export default {
   font-size: 3rem;
   transition: all 0.2s ease-in-out;
   padding-bottom: 10px;
-
-  &:hover {
-    font-size: 3.5rem;
-    padding-bottom: 0;
-  }
 }
 </style>

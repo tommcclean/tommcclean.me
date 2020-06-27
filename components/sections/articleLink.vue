@@ -1,7 +1,8 @@
 <template>
   <a :href="link" target="_blank" class="c-article u-flexContainer">
     <c-icon
-      :icon="icon" />
+      :icon="['fab', 'dev']"
+      class="fa-fw" />
     <p
       v-text="text" />
   </a>
@@ -10,11 +11,6 @@
 <script>
 export default {
   props: {
-    icon: {
-      type: String,
-      required: true
-    },
-
     text: {
       type: String,
       required: true
@@ -33,25 +29,26 @@ export default {
     width: 800px;
     max-width: 90%;
     margin: 0 auto;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 15px;
+    border-bottom: 1px solid #494949;
+    padding: 10px;
     text-decoration: none;
-    margin-bottom: 10px;
-    transition: all 0.2s ease-in-out;
+    margin-bottom: 5px;
     text-align: left;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     p {
       margin-bottom: 0;
     }
 
-    &:hover {
-      background-color: white;
-      color: black;
-    }
-
     svg {
-      margin-right: 10px;
+      font-size: 2rem;
     }
   }
 </style>
