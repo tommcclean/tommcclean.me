@@ -2,7 +2,8 @@
   <a :href="props.href" target="_blank" class="c-projects-projectItem">
     <img
       class="c-projects-projectItem-icon"
-      :src="props.imageSource">
+      :src="props.imageSource"
+      alt="Project Icon">
     <p
       v-text="props.text" />
   </a>

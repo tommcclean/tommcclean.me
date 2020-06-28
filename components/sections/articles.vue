@@ -8,7 +8,7 @@
       <content-wrapper>
         <div class="u-flexGrow">
           <h2 class="title">Articles</h2>
-          <h3>I learn by doing, sometimes I write articles to share what I have learned.</h3>
+          <h3>I learn by doing, sometimes I write articles to share what I have learned</h3>
           <p>I am looking to write more frequently, so check back soon to see even more...</p>
 
           <div class="c-articles-wrapper">

@@ -12,7 +12,7 @@
 
           <div class="c-employment-wrapper">
             <div class="c-employment-role u-flexContainer">
-              <img src="/employment/just-eat.png">
+              <img src="/employment/just-eat.png" alt="Just Eat Logo">
               <div class="c-employment-role-details u-flexGrow">
                 <h4>Just Eat</h4>
                 <p>Senior Full-Stack Software Engineer</p>
@@ -21,16 +21,16 @@
             </div>
 
             <div class="c-employment-role u-flexContainer">
-              <img src="/employment/river.png">
+              <img src="/employment/river.png" alt="Team River Logo">
               <div class="c-employment-role-details u-flexGrow">
                 <h4>Team River</h4>
-                <p>Full-Stack Software Engineer</p>
+                <p>Senior Full-Stack Software Engineer</p>
                 <p class="u-hiddenMobile u-mb-0">Working with .NET, VueJS, Microsoft Azure and SQL Server for an Engagement and BI specialist.</p>
               </div>
             </div>
 
             <div class="c-employment-role u-flexContainer">
-              <img src="/employment/edm.png">
+              <img src="/employment/edm.png" alt="EDM Group Logo">
               <div class="c-employment-role-details u-flexGrow">
                 <h4>EDM Group</h4>
                 <p>Software Engineer</p>
@@ -38,6 +38,7 @@
               </div>
             </div>
           </div>
+          <a href="https://www.linkedin.com/in/tommccleanuk" target="_blank"><c-icon icon="plus" />Plus two more...</a>
         </div>
       </content-wrapper>
     </overlay>
@@ -78,5 +79,9 @@
 
   .c-employment-role-details {
     text-align: left;
+  }
+
+  svg {
+    margin-right: 5px;
   }
 </style>

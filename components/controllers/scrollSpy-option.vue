@@ -45,8 +45,8 @@ export default {
 
 <style scoped lang="scss">
 .c-scrollSpy-icon {
-  margin: 5px;
-  margin-bottom: 15px;
+  margin: 3px;
+  margin-bottom: 5px;
   font-size: 1.5rem;
   padding: 5px;
   cursor: pointer;

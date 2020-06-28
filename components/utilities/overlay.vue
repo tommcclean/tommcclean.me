@@ -15,9 +15,5 @@
   padding-bottom: 50px;
   z-index: 10;
   background: rgba(0, 0, 0, 0.7);
-
-  @media (max-width: 850px) {
-    padding-top: 20px;
-  }
 }
 </style>

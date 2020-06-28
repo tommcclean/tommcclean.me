@@ -34,6 +34,10 @@ export default {
   text-align: center;
   cursor: pointer;
 
+  @media (max-width: 1024px) {
+    bottom: 10px;
+  }
+
   @media (max-height: 400px) {
     display: none;
   }

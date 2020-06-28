@@ -20,10 +20,15 @@
       icon="briefcase"
       :slide="4" />
 
+    <scroll-spy-option
+      text="brands"
+      icon="tag"
+      :slide="5" />
+
     <!-- <scroll-spy-option
       text="contact"
       icon="phone"
-      :slide="5" /> -->
+      :slide="6" /> -->
   </div>
 </template>
 
