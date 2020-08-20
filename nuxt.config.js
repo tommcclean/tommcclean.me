@@ -28,7 +28,8 @@ export default {
     color: '#fff'
   },
 
-  mode: 'universal',
+  mode: 'client',
+  target: 'static',
 
   modules: [
     '@nuxtjs/pwa',

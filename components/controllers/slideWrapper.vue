@@ -34,8 +34,6 @@ export default {
 
 <style scoped>
 .c-slideWrapper {
-  position: relative;
-  overflow: hidden;
   height: 100vh;
 }
 </style>

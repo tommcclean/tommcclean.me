@@ -1,9 +1,10 @@
 <template>
   <div
-    :class="['c-scrollSpy-icon', { 'c-scrollSpy-icon--active' : activeSlide === slide }]"
+    :class="['c-scrollSpy-icon', {
+      'c-scrollSpy-icon--active' : activeSlide === slide
+    }]"
     @click="SLIDE_SET_ACTIVE_SLIDE(slide)">
-    <p
-      v-text="text" />
+    <p v-text="text" />
 
     <c-icon
       :icon="icon"
@@ -46,7 +47,6 @@ export default {
 <style scoped lang="scss">
 .c-scrollSpy-icon {
   margin: 3px;
-  margin-bottom: 5px;
   font-size: 1.5rem;
   padding: 5px;
   cursor: pointer;

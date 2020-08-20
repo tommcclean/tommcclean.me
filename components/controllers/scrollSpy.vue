@@ -24,11 +24,6 @@
       text="brands"
       icon="tag"
       :slide="5" />
-
-    <!-- <scroll-spy-option
-      text="contact"
-      icon="phone"
-      :slide="6" /> -->
   </div>
 </template>
 
