@@ -37,7 +37,7 @@ export default {
   border-bottom-right-radius: 25%;
 
   svg {
-    font-size: 2rem;
+    font-size: 2.5rem;
     transition: all 0.2s ease-in-out;
   }
 

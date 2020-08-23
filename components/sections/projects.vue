@@ -1,7 +1,7 @@
 <template>
   <div class="c-projects u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
     <overlay>
-      <profile-badge
+      <corner-badge
         href="https://github.com/tommcclean"
         icon="github" />
 
@@ -40,9 +40,5 @@
 <style scoped>
   .c-projects {
     background-image: url('/media/projects-background.jpg');
-  }
-
-  .c-projects-projectsWrapper {
-    margin-top: 30px;
   }
 </style>

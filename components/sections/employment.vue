@@ -1,7 +1,7 @@
 <template>
   <div class="c-employment u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
     <overlay>
-      <profile-badge
+      <corner-badge
         href="https://www.linkedin.com/in/tommccleanuk"
         icon="linkedin" />
 

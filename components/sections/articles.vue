@@ -1,7 +1,7 @@
 <template>
   <div class="c-articles u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
     <overlay>
-      <profile-badge
+      <corner-badge
         href="https://dev.to/tommcclean"
         icon="dev" />
 

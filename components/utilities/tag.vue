@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .c-tag {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: black;
   font-size: 0.8rem;
   opacity: 0.8;

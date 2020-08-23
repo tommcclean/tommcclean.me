@@ -27,20 +27,11 @@ export default {
 <style scoped lang="scss">
 .c-next {
   position: fixed;
-  bottom: 20px;
-  left: 0;
-  right: 0;
+  bottom: 10px;
+  width: 100%;
   z-index: 20;
   text-align: center;
   cursor: pointer;
-
-  @media (max-width: 1024px) {
-    bottom: 10px;
-  }
-
-  @media (max-height: 400px) {
-    display: none;
-  }
 }
 
 .c-next-icon {

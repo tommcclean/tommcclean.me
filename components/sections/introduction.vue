@@ -1,7 +1,7 @@
 <template>
   <div class="c-intro u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
     <overlay>
-      <profile-badge
+      <corner-badge
         href="https://www.instagram.com/thomaswilliammcclean/"
         icon="instagram" />
 

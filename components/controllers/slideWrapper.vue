@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="c-slideWrapper"
-    @wheel="scrollWheel">
+  <div @wheel="scrollWheel">
     <slot />
   </div>
 </template>
@@ -31,9 +29,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.c-slideWrapper {
-  height: 100vh;
-}
-</style>

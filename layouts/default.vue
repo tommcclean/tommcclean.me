@@ -70,10 +70,6 @@ a {
   color: white;
 }
 
-p a {
-  margin: 0;
-}
-
 a svg {
   margin-right: 5px;
 }
