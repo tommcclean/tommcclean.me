@@ -28,7 +28,7 @@ export default {
     color: '#fff'
   },
 
-  mode: 'client',
+  mode: 'universal',
   target: 'static',
 
   modules: [

@@ -30,6 +30,11 @@
               text="RapidSurvey.io"
               image-source="/projects/rapid-survey-io.png"
               href="https://www.rapidsurvey.io" />
+
+            <project-item
+              text="tomorepo"
+              image-source="/projects/storybook.png"
+              href="https://tommcclean.github.io/tomorepo" />
           </div>
         </div>
       </content-wrapper>
