@@ -4,7 +4,7 @@
       <content-wrapper>
         <div class="u-flexGrow">
           <h2 class="title">Brands</h2>
-          <h3>Over my career so far I have had the pleasure of working with or building for some household names</h3>
+          <h3>Over my career I have had the pleasure of working with or building for some awesome household names</h3>
 
           <div class="c-brands-matrix">
             <img src="/brands/honda.png" alt="Honda Logo">

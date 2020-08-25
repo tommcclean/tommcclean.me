@@ -54,6 +54,7 @@
     width: 600px;
     max-width: 90vw;
     margin: 0 auto;
+    margin-bottom: 10px;
     text-align: center;
 
     img {
