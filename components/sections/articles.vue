@@ -33,7 +33,7 @@
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
   .c-articles {
     background-image: url('/media/articles-background.jpg');
   }

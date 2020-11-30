@@ -27,7 +27,7 @@
   </div>
 </template>
 
-<style scoped lang="scss">
+<style scoped>
 .c-scrollSpy {
   position: fixed;
   top: 10px;
