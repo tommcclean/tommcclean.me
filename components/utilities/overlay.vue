@@ -12,6 +12,6 @@
   top: 0;
   bottom: 0;
   z-index: 10;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
 }
 </style>

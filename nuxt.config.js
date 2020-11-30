@@ -28,7 +28,6 @@ export default {
     color: '#fff'
   },
 
-  mode: 'universal',
   target: 'static',
 
   modules: [
