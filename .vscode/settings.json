@@ -10,6 +10,7 @@
     "assets": true,
     "LICENSE": true,
     ".vscode": true,
-    ".eslintrc.js": true
+    ".eslintrc.js": true,
+    "yarn.lock": true
   }
 }

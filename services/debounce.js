@@ -1,4 +1,4 @@
-module.exports = function debounce (fn, delay) {
+export default function debounce (fn, delay) {
   let timeoutID = null
 
   return function () {
