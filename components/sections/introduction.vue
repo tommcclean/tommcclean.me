@@ -22,6 +22,6 @@
 
 <style scoped>
   .c-intro {
-    background-image: url('/media/home-background.png');
+    background-image: url('/media/home-background.jpg');
   }
 </style>
