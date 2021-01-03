@@ -17,6 +17,11 @@
               href="https://cmpct.io" />
 
             <project-item
+              text="battleblox.gg"
+              image-source="/projects/battleblox.png"
+              href="http://www.battleblox.gg" />
+
+            <project-item
               text="ShineProject.io"
               image-source="/projects/shine-project-io.png"
               href="https://www.shineproject.io" />
