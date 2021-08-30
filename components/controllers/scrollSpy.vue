@@ -1,26 +1,26 @@
 <template>
   <div class="c-scrollSpy">
-    <scroll-spy-option
+    <controllers-scroll-spy-option
       text="home"
       icon="home"
       :slide="1" />
 
-    <scroll-spy-option
+    <controllers-scroll-spy-option
       text="projects"
       icon="project-diagram"
       :slide="2" />
 
-    <scroll-spy-option
+    <controllers-scroll-spy-option
       text="articles"
       icon="bookmark"
       :slide="3" />
 
-    <scroll-spy-option
+    <controllers-scroll-spy-option
       text="employment"
       icon="briefcase"
       :slide="4" />
 
-    <scroll-spy-option
+    <controllers-scroll-spy-option
       text="brands"
       icon="tag"
       :slide="5" />

@@ -1,6 +1,6 @@
 <template>
   <div class="c-landscape u-flexContainer u-imageBackground">
-    <overlay>
+    <utilities-overlay>
       <div class="u-flexGrow">
         <h1 class="title">Thomas William McClean</h1>
         <h3>
@@ -8,7 +8,7 @@
           <span>Please rotate your device to portrait</span>
         </h3>
       </div>
-    </overlay>
+    </utilities-overlay>
   </div>
 </template>
 

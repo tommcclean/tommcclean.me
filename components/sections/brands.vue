@@ -1,7 +1,7 @@
 <template>
   <div class="c-brands u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
-    <overlay>
-      <content-wrapper>
+    <utilities-overlay>
+      <utilities-content-wrapper>
         <div class="u-flexGrow">
           <h2 class="title">Brands</h2>
           <h3>Over my career I have had the pleasure of working with or building for some awesome household names</h3>
@@ -17,8 +17,8 @@
             <img src="/brands/justeat.png" alt="JustEat Logo">
           </div>
         </div>
-      </content-wrapper>
-    </overlay>
+      </utilities-content-wrapper>
+    </utilities-overlay>
   </div>
 </template>
 

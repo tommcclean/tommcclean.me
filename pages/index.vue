@@ -1,13 +1,13 @@
 <template>
-  <slide-wrapper>
-    <slide :slide-number="1"><introduction /></slide>
-    <slide :slide-number="2"><projects /></slide>
-    <slide :slide-number="3"><articles /></slide>
-    <slide :slide-number="4"><employment /></slide>
-    <slide :slide-number="5"><brands /></slide>
+  <controllers-slide-wrapper>
+    <controllers-slide :slide-number="1"><sections-introduction /></controllers-slide>
+    <controllers-slide :slide-number="2"><sections-projects /></controllers-slide>
+    <controllers-slide :slide-number="3"><sections-articles /></controllers-slide>
+    <controllers-slide :slide-number="4"><sections-employment /></controllers-slide>
+    <controllers-slide :slide-number="5"><sections-brands /></controllers-slide>
 
-    <scroll-spy />
-    <next />
-    <landscape />
-  </slide-wrapper>
+    <controllers-scroll-spy />
+    <controllers-next />
+    <controllers-landscape />
+  </controllers-slide-wrapper>
 </template>

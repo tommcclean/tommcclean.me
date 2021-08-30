@@ -1,11 +1,11 @@
 <template>
   <div class="c-employment u-fullHeight u-positionRelative u-flexContainer u-imageBackground">
-    <overlay>
-      <corner-badge
+    <utilities-overlay>
+      <sections-corner-badge
         href="https://www.linkedin.com/in/tommccleanuk"
         icon="linkedin" />
 
-      <content-wrapper>
+      <utilities-content-wrapper>
         <div class="u-flexGrow">
           <h2 class="title">Employment</h2>
           <h3>Comes out of the box with over a decade of experience</h3>
@@ -40,8 +40,8 @@
           </div>
           <a href="https://www.linkedin.com/in/tommccleanuk" target="_blank"><c-icon icon="plus" />Plus two more...</a>
         </div>
-      </content-wrapper>
-    </overlay>
+      </utilities-content-wrapper>
+    </utilities-overlay>
   </div>
 </template>
 
