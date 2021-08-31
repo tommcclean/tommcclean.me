@@ -5,13 +5,13 @@
 
 ``` bash
 # Install dependencies
-$ npm install
+$ yarn
 
 # Develop on localhost:3000
-$ npm run dev
+$ yarn dev
 
 # Generate output for deployment
-$ npm run generate
+$ yarn generate
 
 # Visit the deployed website
 https://www.tommcclean.me
