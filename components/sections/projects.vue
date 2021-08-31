@@ -8,8 +8,7 @@
       <utilities-content-wrapper>
         <div class="u-flexGrow">
           <h2 class="title">Projects</h2>
-          <h3>I am <i>always</i> working on something interesting</h3>
-          <p>Building software is my job and a hobby, I master new technologies with every project</p>
+          <h3>I am <i>always</i> working on something interesting. Building software is my hobby and my job.</h3>
           <div class="c-projects-projectsWrapper">
             <sections-project-item
               text="cmpct.io"
@@ -50,5 +49,12 @@
 <style scoped>
   .c-projects {
     background-image: url('/media/projects-background.jpg');
+  }
+
+  .c-projects-projectsWrapper {
+    width: 600px;
+    max-width: 100%;
+    padding-top: 20px;
+    margin: 0 auto;
   }
 </style>

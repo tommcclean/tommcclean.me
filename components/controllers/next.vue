@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .c-next {
   position: fixed;
-  bottom: 10px;
+  bottom: 15px;
   width: 100%;
   z-index: 20;
   text-align: center;

@@ -15,8 +15,8 @@
               <img src="/employment/just-eat.png" alt="Just Eat Logo">
               <div class="c-employment-role-details u-flexGrow">
                 <h4>Just Eat</h4>
-                <p>Senior Full-Stack Software Engineer</p>
-                <p class="u-hiddenMobile u-mb-0">Specialising in Website Development using .NET, VueJS, AWS for a global food delivery giant.</p>
+                <p class="u-hiddenMobile">Senior Full-Stack Software Engineer</p>
+                <p class="u-mb-0">Specialising in Website Development using .NET, VueJS, AWS for a global food delivery giant.</p>
               </div>
             </div>
 
@@ -24,8 +24,8 @@
               <img src="/employment/river.png" alt="Team River Logo">
               <div class="c-employment-role-details u-flexGrow">
                 <h4>Team River</h4>
-                <p>Senior Full-Stack Software Engineer</p>
-                <p class="u-hiddenMobile u-mb-0">Working with .NET, VueJS, Microsoft Azure and SQL Server for an Engagement and BI specialist.</p>
+                <p class="u-hiddenMobile">Senior Full-Stack Software Engineer</p>
+                <p class="u-mb-0">Working with .NET, VueJS, Microsoft Azure and SQL Server for an Engagement and BI specialist.</p>
               </div>
             </div>
 
@@ -33,8 +33,8 @@
               <img src="/employment/edm.png" alt="EDM Group Logo">
               <div class="c-employment-role-details u-flexGrow">
                 <h4>EDM Group</h4>
-                <p>Software Engineer</p>
-                <p class="u-hiddenMobile u-mb-0">Focusing on Business Process Management, Workflow and bulk data processing for an Information Management business.</p>
+                <p class="u-hiddenMobile">Software Engineer</p>
+                <p class="u-mb-0">Business Process, Workflow and data processing for an Information Management business.</p>
               </div>
             </div>
           </div>
@@ -57,6 +57,10 @@
     margin-bottom: 10px;
     text-align: center;
 
+    @media (max-width: 767px) {
+      margin-bottom: -10px;
+    }
+
     img {
       width: 125px;
       border-radius: 5px;
@@ -70,8 +74,17 @@
 
   .c-employment-role {
     margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 
-    @media (max-width: 767px) {
+    h4 {
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 1024px) {
+      padding-top: 5px;
+      padding-bottom: 5px;
+
       p {
         margin-bottom: 0;
       }

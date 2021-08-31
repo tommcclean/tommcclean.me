@@ -8,7 +8,7 @@
       <utilities-content-wrapper>
         <div class="inner">
           <h1 class="title">Thomas William McClean</h1>
-          <h3>Full-stack Software Engineer from Bristol, United Kingdom</h3>
+          <h3>Senior Full-stack Software Engineer from Bristol, United Kingdom</h3>
 
           <utilities-tag icon="map-marker" text="Bristol, UK" />
           <utilities-tag icon="briefcase" text="Software Engineer @ Just Eat" />

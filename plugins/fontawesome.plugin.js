@@ -9,4 +9,5 @@ config.autoAddCss = false
 library.add(fas)
 library.add(fab)
 
+// eslint-disable-next-line vue/component-definition-name-casing
 Vue.component('c-icon', FontAwesomeIcon)

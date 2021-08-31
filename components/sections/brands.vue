@@ -4,7 +4,7 @@
       <utilities-content-wrapper>
         <div class="u-flexGrow">
           <h2 class="title">Brands</h2>
-          <h3>Over my career I have had the pleasure of working with or building for some awesome household names</h3>
+          <h3>I have had the pleasure of working with or building for some awesome household names</h3>
 
           <div class="c-brands-matrix">
             <img src="/brands/honda.png" alt="Honda Logo">
@@ -28,7 +28,7 @@
   }
 
   .c-brands-matrix {
-    width: 800px;
+    width: 550px;
     max-width: 90vw;
     margin: 0 auto;
     text-align: center;
@@ -36,7 +36,7 @@
     img {
       width: 150px;
       border-radius: 5px;
-      margin: 5px;
+      margin: 10px;
 
       @media (max-width: 767px) {
         width: 90px;

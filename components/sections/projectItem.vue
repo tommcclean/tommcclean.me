@@ -33,6 +33,7 @@ export default {
 <style scoped lang="scss">
   .c-projects-projectItem {
     display: inline-block;
+    width: 150px;
     margin: 10px;
 
     @media (max-width: 768px) {

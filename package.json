@@ -1,27 +1,24 @@
 {
   "name": "tommcclean.me",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "The digital portfolio of Thomas William McClean",
   "author": "Thomas William McClean",
-  "private": true,
   "scripts": {
     "dev": "nuxt",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix ."
   },
-  "dependencies": {
+  "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.36",
     "@fortawesome/free-brands-svg-icons": "5.15.4",
     "@fortawesome/free-solid-svg-icons": "5.15.4",
     "@fortawesome/vue-fontawesome": "0.1.10",
-    "@nuxt/components": "2.2.1",
-    "@nuxtjs/pwa": "3.3.5",
     "nuxt": "2.15.8",
-    "nuxt-webfontloader": "1.1.0"
-  },
-  "devDependencies": {
+    "@nuxt/components": "2.2.1",
     "@nuxtjs/eslint-config": "6.0.1",
     "@nuxtjs/eslint-module": "3.0.2",
+    "@nuxtjs/pwa": "3.3.5",
+    "nuxt-webfontloader": "1.1.0",
     "babel-eslint": "10.1.0",
     "eslint": "7.32.0",
     "eslint-plugin-nuxt": "2.0.0",
