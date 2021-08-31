@@ -11,7 +11,7 @@ html {
     color: white;
 
     @media (max-width: 767px) {
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 

@@ -46,7 +46,7 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
   .c-projects {
     background-image: url('/media/projects-background.jpg');
   }
@@ -56,5 +56,9 @@
     max-width: 100%;
     padding-top: 20px;
     margin: 0 auto;
+
+    @media (max-width: 767px) {
+      padding-top: 10px;
+    }
   }
 </style>
