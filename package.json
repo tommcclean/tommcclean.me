@@ -20,9 +20,12 @@
     "babel-eslint": "10.1.0",
     "eslint": "7.32.0",
     "eslint-plugin-nuxt": "2.0.0",
-    "node-sass": "4.14.1",
+    "fibers": "^5.0.0",
     "nuxt": "2.15.8",
     "nuxt-webfontloader": "1.1.0",
-    "sass-loader": "9.0.3"
+    "pug": "^3.0.2",
+    "pug-plain-loader": "^1.1.0",
+    "sass": "^1.42.1",
+    "sass-loader": "10"
   }
 }
