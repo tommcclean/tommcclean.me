@@ -11,6 +11,9 @@
     "LICENSE": true,
     ".vscode": true,
     ".eslintrc.js": true,
-    "yarn.lock": true
+    "yarn.lock": true,
+    ".github": true,
+    "dist": true,
+    ".eslintcache": true
   }
 }
