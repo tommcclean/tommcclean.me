@@ -16,9 +16,9 @@
               href="https://cmpct.io" />
 
             <sections-project-item
-              text="battleblox.gg"
+              text="battleblox"
               image-source="/projects/battleblox.png"
-              href="http://www.battleblox.gg" />
+              href="http://www.battleblox.tommcclean.me" />
 
             <sections-project-item
               text="ShineProject.io"
