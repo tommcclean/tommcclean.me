@@ -11,6 +11,11 @@
           <h3>I am <i>always</i> working on something interesting. Building software is my hobby and my job.</h3>
           <div class="c-projects-projectsWrapper">
             <sections-project-item
+              text="micro stat"
+              image-source="/projects/micro-stat.png"
+              href="https://www.micro-stat.com" />
+
+            <sections-project-item
               text="cmpct.io"
               image-source="/projects/cmpct-io.png"
               href="https://cmpct.io" />
@@ -21,19 +26,14 @@
               href="http://www.battleblox.tommcclean.me" />
 
             <sections-project-item
-              text="ShineProject.io"
-              image-source="/projects/shine-project-io.png"
-              href="https://www.shineproject.io" />
-
-            <sections-project-item
               text="PortalCMS"
               image-source="/projects/portal.png"
               href="https://github.com/tommcclean/PortalCMS" />
 
             <sections-project-item
-              text="RapidSurvey.io"
-              image-source="/projects/rapid-survey-io.png"
-              href="https://www.rapidsurvey.io" />
+              text="ShineProject.io"
+              image-source="/projects/shine-project-io.png"
+              href="https://www.shineproject.io" />
 
             <sections-project-item
               text="tomorepo"
