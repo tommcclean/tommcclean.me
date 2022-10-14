@@ -26,19 +26,19 @@
               href="http://www.battleblox.tommcclean.me" />
 
             <sections-project-item
+              text="Animal Crossing Portal"
+              image-source="/projects/acp.webp"
+              href="http://www.animalcrossingportal.com" />
+
+            <sections-project-item
+              text="Pokemon Tier List"
+              image-source="/projects/pokemon.webp"
+              href="http://www.pokemontierlists.com" />
+
+            <sections-project-item
               text="PortalCMS"
               image-source="/projects/portal.png"
               href="https://github.com/tommcclean/PortalCMS" />
-
-            <sections-project-item
-              text="ShineProject.io"
-              image-source="/projects/shine-project-io.png"
-              href="https://www.shineproject.io" />
-
-            <sections-project-item
-              text="tomorepo"
-              image-source="/projects/storybook.png"
-              href="https://tommcclean.github.io/tomorepo" />
           </div>
         </div>
       </utilities-content-wrapper>
@@ -52,7 +52,7 @@
   }
 
   .c-projects-projectsWrapper {
-    width: 600px;
+    width: 1000px;
     max-width: 100%;
     padding-top: 20px;
     margin: 0 auto;
