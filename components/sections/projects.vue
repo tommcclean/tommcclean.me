@@ -11,6 +11,11 @@
           <h3>I am <i>always</i> working on something interesting. Building software is my hobby and my job.</h3>
           <div class="c-projects-projectsWrapper">
             <sections-project-item
+              text="weblauncher"
+              image-source="/projects/web-launcher.png"
+              href="https://www.weblauncher.online" />
+
+            <sections-project-item
               text="micro stat"
               image-source="/projects/micro-stat.png"
               href="https://www.micro-stat.com" />
