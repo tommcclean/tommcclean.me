@@ -23,9 +23,13 @@
     "micro-stat": "0.7.0",
     "nuxt": "2.15.8",
     "nuxt-webfontloader": "1.1.0",
-    "pug": "^3.0.2",
-    "pug-plain-loader": "^1.1.0",
-    "sass": "^1.43.3",
+    "pug": "3.0.2",
+    "pug-plain-loader": "1.1.0",
+    "sass": "1.43.3",
     "sass-loader": "10"
+  },
+  "volta": {
+    "node": "16.19.0",
+    "yarn": "1.22.0"
   }
 }
