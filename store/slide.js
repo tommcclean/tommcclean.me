@@ -2,7 +2,7 @@ import { SLIDE_SET_ACTIVE_SLIDE } from '@/store/mutations.constants'
 
 export const state = () => ({
   activeSlide: 1,
-  totalSlides: 5
+  totalSlides: 4
 })
 
 export const mutations = {

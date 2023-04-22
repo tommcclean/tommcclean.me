@@ -11,19 +11,14 @@
       :slide="2" />
 
     <controllers-scroll-spy-option
-      text="articles"
-      icon="bookmark"
+      text="employment"
+      icon="briefcase"
       :slide="3" />
 
     <controllers-scroll-spy-option
-      text="employment"
-      icon="briefcase"
+      text="articles"
+      icon="bookmark"
       :slide="4" />
-
-    <controllers-scroll-spy-option
-      text="brands"
-      icon="tag"
-      :slide="5" />
   </div>
 </template>
 

@@ -4,10 +4,11 @@
       <utilities-content-wrapper>
         <div class="inner">
           <h1 class="title">Thomas William McClean</h1>
-          <h3>Senior Full-stack Software Engineer from Bristol, United Kingdom</h3>
+          <h3>I am an experienced software engineer and technology enthusiast.</h3>
 
           <utilities-tag icon="map-marker" text="Bristol, UK" />
-          <utilities-tag icon="briefcase" text="Software Engineer @ Just Eat" />
+          <utilities-tag icon="briefcase" text="Senior Full Stack Engineer" />
+          <utilities-tag icon="briefcase" text="Just Eat Takeaway" />
           <utilities-tag icon="code" text="VueJS, .NETCore, AWS, Azure" />
           <utilities-tag icon="heart" text="Football, Technology, Futurism, Science" />
         </div>
@@ -18,6 +19,6 @@
 
 <style scoped>
   .c-intro {
-    background-image: url('/media/home-background.jpg');
+    background-image: url('/media/home-background.png');
   }
 </style>

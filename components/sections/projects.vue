@@ -53,7 +53,7 @@
 
 <style scoped lang="scss">
   .c-projects {
-    background-image: url('/media/projects-background.jpg');
+    background-image: url('/media/projects-background.png');
   }
 
   .c-projects-projectsWrapper {
