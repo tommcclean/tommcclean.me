@@ -21,7 +21,7 @@
     "eslint": "7.32.0",
     "eslint-plugin-nuxt": "2.0.0",
     "micro-stat": "0.7.0",
-    "nuxt": "2.15.8",
+    "nuxt": "3.4.3",
     "nuxt-webfontloader": "1.1.0",
     "pug": "3.0.2",
     "pug-plain-loader": "1.1.0",
