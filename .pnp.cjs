@@ -26,11 +26,14 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@types/node", "npm:20.4.0"],\
+          ["@types/react", "npm:18.2.14"],\
           ["eslint", "npm:8.44.0"],\
           ["eslint-config-next", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:13.4.8"],\
           ["next", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:13.4.8"],\
           ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:18.2.0"]\
+          ["react-dom", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:18.2.0"],\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -317,6 +320,45 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/node", [\
+      ["npm:20.4.0", {\
+        "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/@types-node-npm-20.4.0-2eb9c50cc4-10c0.zip/node_modules/@types/node/",\
+        "packageDependencies": [\
+          ["@types/node", "npm:20.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/prop-types", [\
+      ["npm:15.7.5", {\
+        "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/@types-prop-types-npm-15.7.5-2aa48aa177-10c0.zip/node_modules/@types/prop-types/",\
+        "packageDependencies": [\
+          ["@types/prop-types", "npm:15.7.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/react", [\
+      ["npm:18.2.14", {\
+        "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/@types-react-npm-18.2.14-4d72cc1c1d-10c0.zip/node_modules/@types/react/",\
+        "packageDependencies": [\
+          ["@types/react", "npm:18.2.14"],\
+          ["@types/prop-types", "npm:15.7.5"],\
+          ["@types/scheduler", "npm:0.16.3"],\
+          ["csstype", "npm:3.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/scheduler", [\
+      ["npm:0.16.3", {\
+        "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/@types-scheduler-npm-0.16.3-887bfc0086-10c0.zip/node_modules/@types/scheduler/",\
+        "packageDependencies": [\
+          ["@types/scheduler", "npm:0.16.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@typescript-eslint/parser", [\
       ["npm:5.61.0", {\
         "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/@typescript-eslint-parser-npm-5.61.0-e9d104643e-10c0.zip/node_modules/@typescript-eslint/parser/",\
@@ -336,7 +378,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/typescript-estree", "virtual:ec63854277ca67b424f0bba96d601de5a6118be3b570937dffe672abd1d5f6b6663dd7d62bb6dd59bc45a33e89578235c7b8d476ebffc1489c2429625bbfcac2#npm:5.61.0"],\
           ["debug", "virtual:352060d453a801a0fd16b073afb56a2607e33f96a5ff7faf9351853a737843ea6ad854442954d36ef1f89461751ed94f005ea67c746b39723d1da041a244f7d2#npm:4.3.4"],\
           ["eslint", "npm:8.44.0"],\
-          ["typescript", null]\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "packagePeers": [\
           "@types/eslint",\
@@ -387,7 +429,7 @@ const RAW_RUNTIME_STATE =
           ["is-glob", "npm:4.0.3"],\
           ["semver", "npm:7.5.3"],\
           ["tsutils", "virtual:7ddd2dfe09f2bd23cdb210252c471cd2db8ae94727a63c97de68da8114728829a195dd7222a2e45feac698493e7f55865314df86f6253df0fe7a5bdd3a6dada1#npm:3.21.0"],\
-          ["typescript", null]\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -758,6 +800,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["csstype", [\
+      ["npm:3.1.2", {\
+        "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/csstype-npm-3.1.2-cead7d99b2-10c0.zip/node_modules/csstype/",\
+        "packageDependencies": [\
+          ["csstype", "npm:3.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["damerau-levenshtein", [\
       ["npm:1.0.8", {\
         "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/damerau-levenshtein-npm-1.0.8-bda7311c69-10c0.zip/node_modules/damerau-levenshtein/",\
@@ -1079,7 +1130,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-jsx-a11y", "virtual:879bae4d5dfd0288273d9c44666abccd2a591567ce406c8d201440333fda83ff8cf1aa4d12f8c3a102ba778bdbef7d67074929afa27b40ccd5f95faced7a9adb#npm:6.7.1"],\
           ["eslint-plugin-react", "virtual:879bae4d5dfd0288273d9c44666abccd2a591567ce406c8d201440333fda83ff8cf1aa4d12f8c3a102ba778bdbef7d67074929afa27b40ccd5f95faced7a9adb#npm:7.32.2"],\
           ["eslint-plugin-react-hooks", "virtual:879bae4d5dfd0288273d9c44666abccd2a591567ce406c8d201440333fda83ff8cf1aa4d12f8c3a102ba778bdbef7d67074929afa27b40ccd5f95faced7a9adb#npm:4.6.0"],\
-          ["typescript", null]\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "packagePeers": [\
           "@types/eslint",\
@@ -2412,7 +2463,7 @@ const RAW_RUNTIME_STATE =
           ["@swc/helpers", "npm:0.5.1"],\
           ["@types/fibers", null],\
           ["@types/opentelemetry__api", null],\
-          ["@types/react", null],\
+          ["@types/react", "npm:18.2.14"],\
           ["@types/react-dom", null],\
           ["@types/sass", null],\
           ["busboy", "npm:1.6.0"],\
@@ -2775,7 +2826,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./.yarn/__virtual__/react-dom-virtual-6f34714686/4/C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/react-dom-npm-18.2.0-dd675bca1c-10c0.zip/node_modules/react-dom/",\
         "packageDependencies": [\
           ["react-dom", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:18.2.0"],\
-          ["@types/react", null],\
+          ["@types/react", "npm:18.2.14"],\
           ["loose-envify", "npm:1.4.0"],\
           ["react", "npm:18.2.0"],\
           ["scheduler", "npm:0.23.0"]\
@@ -3121,7 +3172,7 @@ const RAW_RUNTIME_STATE =
           ["@babel/core", null],\
           ["@types/babel-plugin-macros", null],\
           ["@types/babel__core", null],\
-          ["@types/react", null],\
+          ["@types/react", "npm:18.2.14"],\
           ["babel-plugin-macros", null],\
           ["client-only", "npm:0.0.1"],\
           ["react", "npm:18.2.0"]\
@@ -3209,11 +3260,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["tommcclean.me", "workspace:."],\
+          ["@types/node", "npm:20.4.0"],\
+          ["@types/react", "npm:18.2.14"],\
           ["eslint", "npm:8.44.0"],\
           ["eslint-config-next", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:13.4.8"],\
           ["next", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:13.4.8"],\
           ["react", "npm:18.2.0"],\
-          ["react-dom", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:18.2.0"]\
+          ["react-dom", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:18.2.0"],\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -3261,7 +3315,7 @@ const RAW_RUNTIME_STATE =
           ["tsutils", "virtual:7ddd2dfe09f2bd23cdb210252c471cd2db8ae94727a63c97de68da8114728829a195dd7222a2e45feac698493e7f55865314df86f6253df0fe7a5bdd3a6dada1#npm:3.21.0"],\
           ["@types/typescript", null],\
           ["tslib", "npm:1.14.1"],\
-          ["typescript", null]\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -3297,6 +3351,15 @@ const RAW_RUNTIME_STATE =
           ["call-bind", "npm:1.0.2"],\
           ["for-each", "npm:0.3.3"],\
           ["is-typed-array", "npm:1.1.10"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["typescript", [\
+      ["patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071", {\
+        "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/typescript-patch-97a611e52a-10c0.zip/node_modules/typescript/",\
+        "packageDependencies": [\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
         ],\
         "linkType": "HARD"\
       }]\

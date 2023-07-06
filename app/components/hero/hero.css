@@ -1,0 +1,10 @@
+.hero {
+  padding: 5rem;
+  padding-top: calc(60px);;
+  min-height: 100vh;
+  background-color: green;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
