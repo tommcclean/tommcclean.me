@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    ".next": true,
+    ".vscode": true,
+    ".yarn": true,
+    "jsconfig.json": true,
+    ".gitignore": true,
+    ".eslintrc.json": true,
+    ".pnp.cjs": true,
+    ".pnp.loader.mjs": true,
+    "LICENSE": true
+  }
+}
