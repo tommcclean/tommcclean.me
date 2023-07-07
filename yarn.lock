@@ -231,6 +231,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash.debounce@npm:^4":
+  version: 4.0.7
+  resolution: "@types/lodash.debounce@npm:4.0.7"
+  dependencies:
+    "@types/lodash": "npm:*"
+  checksum: 8d4063d40f82900b6ac6b52429a05bdce5925084f03b83e49fbae656986ceab836857490ee8140133d3270c6bdbc0a6e74be9e9e0bff871ded7e42e2a811b729
+  languageName: node
+  linkType: hard
+
+"@types/lodash@npm:*":
+  version: 4.14.195
+  resolution: "@types/lodash@npm:4.14.195"
+  checksum: 6d733276df592614a0943a0053056140398b3c263cdf2557d4301b3a47b07ff561926cb9339a4725acbc7d8766f91ded218df11e0a4288cee369eafb5141d94d
+  languageName: node
+  linkType: hard
+
 "@types/node@npm:20.4.0":
   version: 20.4.0
   resolution: "@types/node@npm:20.4.0"
@@ -1850,6 +1866,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.debounce@npm:^4.0.8":
+  version: 4.0.8
+  resolution: "lodash.debounce@npm:4.0.8"
+  checksum: 762998a63e095412b6099b8290903e0a8ddcb353ac6e2e0f2d7e7d03abd4275fe3c689d88960eb90b0dde4f177554d51a690f22a343932ecbc50a5d111849987
+  languageName: node
+  linkType: hard
+
 "lodash.merge@npm:^4.6.2":
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
@@ -2705,11 +2728,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "tommcclean.me@workspace:."
   dependencies:
+    "@types/lodash.debounce": "npm:^4"
     "@types/node": "npm:20.4.0"
     "@types/react": "npm:^18.2.14"
     "@types/uuid": "npm:^9"
     eslint: "npm:8.44.0"
     eslint-config-next: "npm:13.4.8"
+    lodash.debounce: "npm:^4.0.8"
     next: "npm:13.4.8"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"

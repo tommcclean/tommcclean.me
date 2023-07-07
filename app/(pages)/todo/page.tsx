@@ -8,7 +8,7 @@ export default function Todo() {
 
   const [ todos, setTodos ] = useState([])
 
-  function addTodo (event) {
+  const addTodo = (event) => {
     event.preventDefault();
 
     if (inputValue === '') {
@@ -27,11 +27,19 @@ export default function Todo() {
     setInputValue("")
   }
 
-  function handleChange (event) {
+
+  const handleNewInputChange = (event) => {
     setInputValue(event.currentTarget.value)
   }
 
-  function handleDelete(id) {
+  const handleRename = (todo) => {
+    setTodos([
+      ...todos.filter(t => t.id !== todo.id),
+      todo
+    ])
+  }
+
+  const handleDelete = (id) => {
     const newList = [
       ...todos.filter(t => t.id !== id)
     ]
@@ -43,13 +51,13 @@ export default function Todo() {
     <>
       <h1>Todo</h1>
       <form onSubmit={addTodo}>
-        <input placeholder="Add a todo" onChange={handleChange} value={inputValue} required type="text" />
+        <input placeholder="Add a todo" onChange={handleNewInputChange} value={inputValue} required type="text" />
         <button type="submit">Add</button>
       </form>
 
       <ul>
         {todos.map(todo =>
-          <TodoItem key={todo.id} todo={todo} handleDelete={handleDelete} />
+          <TodoItem key={todo.id} todo={todo} handleDelete={handleDelete} handleRename={handleRename} />
         )}
         
       </ul>
