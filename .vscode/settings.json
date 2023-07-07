@@ -1,19 +1,14 @@
 {
   "files.exclude": {
-    "node_modules": true,
-    ".nuxt": true,
-    "package-lock.json": true,
+    ".next": true,
+    ".vscode": true,
+    ".yarn": true,
     "jsconfig.json": true,
     ".gitignore": true,
-    ".editorconfig": true,
-    "middleware": true,
-    "assets": true,
+    ".eslintrc.json": true,
+    ".pnp.cjs": true,
+    ".pnp.loader.mjs": true,
     "LICENSE": true,
-    ".vscode": true,
-    ".eslintrc.js": true,
-    "yarn.lock": true,
-    ".github": true,
-    "dist": true,
-    ".eslintcache": true
+    "next-env.d.ts": true
   }
 }

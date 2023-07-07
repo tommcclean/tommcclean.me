@@ -1,0 +1,11 @@
+.todo {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    border-bottom: 1px dashed white;
+}
+
+.todo button {
+  margin-left: 20px;
+  padding: 10px;
+}
