@@ -245,7 +245,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:18.2.14":
+"@types/react@npm:^18.2.14":
   version: 18.2.14
   resolution: "@types/react@npm:18.2.14"
   dependencies:
@@ -260,6 +260,13 @@ __metadata:
   version: 0.16.3
   resolution: "@types/scheduler@npm:0.16.3"
   checksum: c249d4b96fa05165ac22c214f94a045ee0af8beedefdbc54b769febd0044cab3a874e55419841a0dcc76439e379a63e257f3253c87168e3261e7bc783d623302
+  languageName: node
+  linkType: hard
+
+"@types/uuid@npm:^9":
+  version: 9.0.2
+  resolution: "@types/uuid@npm:9.0.2"
+  checksum: 4c4834f9738575a69db1179589cf397830dc205850b491216697afb254764c79c96a63b92f76e81b6d03515bed9227adf184fa4d33bb04970e6377e2f7c5bab9
   languageName: node
   linkType: hard
 
@@ -2699,13 +2706,15 @@ __metadata:
   resolution: "tommcclean.me@workspace:."
   dependencies:
     "@types/node": "npm:20.4.0"
-    "@types/react": "npm:18.2.14"
+    "@types/react": "npm:^18.2.14"
+    "@types/uuid": "npm:^9"
     eslint: "npm:8.44.0"
     eslint-config-next: "npm:13.4.8"
     next: "npm:13.4.8"
     react: "npm:18.2.0"
     react-dom: "npm:18.2.0"
     typescript: "npm:5.1.6"
+    uuid: "npm:^9.0.0"
   languageName: unknown
   linkType: soft
 
@@ -2818,6 +2827,15 @@ __metadata:
   dependencies:
     punycode: "npm:^2.1.0"
   checksum: 4ef57b45aa820d7ac6496e9208559986c665e49447cb072744c13b66925a362d96dd5a46c4530a6b8e203e5db5fe849369444440cb22ecfc26c679359e5dfa3c
+  languageName: node
+  linkType: hard
+
+"uuid@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "uuid@npm:9.0.0"
+  bin:
+    uuid: dist/bin/uuid
+  checksum: 8867e438990d1d33ac61093e2e4e3477a2148b844e4fa9e3c2360fa4399292429c4b6ec64537eb1659c97b2d10db349c673ad58b50e2824a11e0d3630de3c056
   languageName: node
   linkType: hard
 

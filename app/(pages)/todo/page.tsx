@@ -1,17 +1,26 @@
 "use client"; // This is a client component 👈🏽
+import { v4 as uuidv4 } from 'uuid';
 import { useState } from 'react'
 import TodoItem from '../../components/todo/todo'
 
 export default function Todo() {
   const [ inputValue, setInputValue ] = useState("");
-  const [ todos, setTodos ] = useState(['Todo 1', 'Todo 2', 'Test Todo'])
+
+  const [ todos, setTodos ] = useState([])
 
   function addTodo (event) {
     event.preventDefault();
 
+    if (inputValue === '') {
+      return;
+    }
+
     const newList = [
       ...todos,
-      inputValue
+      {
+        title: inputValue,
+        id: uuidv4()
+      }
     ]
 
     setTodos(newList)
@@ -22,10 +31,11 @@ export default function Todo() {
     setInputValue(event.currentTarget.value)
   }
 
-  function handleDelete(todo) {
+  function handleDelete(id) {
     const newList = [
-      ...todos.filter(t => t !== todo)
+      ...todos.filter(t => t.id !== id)
     ]
+
     setTodos(newList)
   }
 
@@ -33,13 +43,13 @@ export default function Todo() {
     <>
       <h1>Todo</h1>
       <form onSubmit={addTodo}>
-        <input placeholder="Add a todo" onChange={handleChange} value={inputValue} />
+        <input placeholder="Add a todo" onChange={handleChange} value={inputValue} required type="text" />
         <button type="submit">Add</button>
       </form>
 
       <ul>
         {todos.map(todo =>
-          <TodoItem key={todo} todo={todo} handleDelete={handleDelete} />
+          <TodoItem key={todo.id} todo={todo} handleDelete={handleDelete} />
         )}
         
       </ul>

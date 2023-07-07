@@ -28,12 +28,14 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/node", "npm:20.4.0"],\
           ["@types/react", "npm:18.2.14"],\
+          ["@types/uuid", "npm:9.0.2"],\
           ["eslint", "npm:8.44.0"],\
           ["eslint-config-next", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:13.4.8"],\
           ["next", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:13.4.8"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:18.2.0"],\
-          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"],\
+          ["uuid", "npm:9.0.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -355,6 +357,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/@types-scheduler-npm-0.16.3-887bfc0086-10c0.zip/node_modules/@types/scheduler/",\
         "packageDependencies": [\
           ["@types/scheduler", "npm:0.16.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/uuid", [\
+      ["npm:9.0.2", {\
+        "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/@types-uuid-npm-9.0.2-f2a5f65979-10c0.zip/node_modules/@types/uuid/",\
+        "packageDependencies": [\
+          ["@types/uuid", "npm:9.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3262,12 +3273,14 @@ const RAW_RUNTIME_STATE =
           ["tommcclean.me", "workspace:."],\
           ["@types/node", "npm:20.4.0"],\
           ["@types/react", "npm:18.2.14"],\
+          ["@types/uuid", "npm:9.0.2"],\
           ["eslint", "npm:8.44.0"],\
           ["eslint-config-next", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:13.4.8"],\
           ["next", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:13.4.8"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:ae8989579acf75ed216dd629e8bd8a5f8f27b6d764e6ca78e485bc8cdb6df57cf29c6d907c1697f44319aaf9f403b213a098d72dd02a0a50189733e4a9b96fb3#npm:18.2.0"],\
-          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"]\
+          ["typescript", "patch:typescript@npm%3A5.1.6#optional!builtin<compat/typescript>::version=5.1.6&hash=5da071"],\
+          ["uuid", "npm:9.0.0"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -3392,6 +3405,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["uri-js", "npm:4.4.1"],\
           ["punycode", "npm:2.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["uuid", [\
+      ["npm:9.0.0", {\
+        "packageLocation": "../../../C:/Users/Thomas/AppData/Local/Yarn/Berry/cache/uuid-npm-9.0.0-46c41e3e43-10c0.zip/node_modules/uuid/",\
+        "packageDependencies": [\
+          ["uuid", "npm:9.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
