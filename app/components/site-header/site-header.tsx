@@ -1,4 +1,4 @@
-import styles from './category.module.css'
+import styles from './site-header.module.css'
 
 export default function Category(props) {
   const {

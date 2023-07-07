@@ -1,6 +1,6 @@
 import './layout.css'
 import { Inter } from 'next/font/google'
-
+import SiteHeader from '@/components/SiteHeader/SiteHeader'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
