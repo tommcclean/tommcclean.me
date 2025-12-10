@@ -11,7 +11,7 @@ interface UserState {
 const initialState: UserState = {
   name: 'Thomas William McClean',
   title: 'Technology Manager and Software Engineer',
-  bio: 'Technology Manager and Software Engineer working at Just Eat Takeaway.',
+  bio: 'Technology Manager for Web Foundations at Just Eat Takeaway',
   email: 'contact@tommcclean.me',
   location: 'Bristol, UK',
 };

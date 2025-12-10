@@ -40,3 +40,39 @@ body {
 .animate-gradient-shift {
   animation: gradient-shift 15s ease infinite;
 }
+
+@keyframes glow-move {
+  0%, 100% {
+    background-position: 0% 50%;
+    transform: scale(1) translate(0, 0);
+  }
+  25% {
+    background-position: 100% 50%;
+    transform: scale(1.1) translate(5px, -5px);
+  }
+  50% {
+    background-position: 200% 50%;
+    transform: scale(1.05) translate(-5px, 5px);
+  }
+  75% {
+    background-position: 100% 50%;
+    transform: scale(1.1) translate(5px, -5px);
+  }
+}
+
+.animate-glow-move {
+  animation: glow-move 6s ease-in-out infinite;
+}
+
+@keyframes bounce-once {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-bounce-once {
+  animation: bounce-once 0.6s ease-in-out;
+}

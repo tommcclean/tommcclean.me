@@ -15,13 +15,18 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 py-20">
       {/* Animated darker gradient background with black */}
-      <div className="absolute inset-0 bg-gradient-to-br from-black via-cyan-950 via-purple-950 via-pink-950 to-black" />
-      <div className="absolute inset-0 animate-gradient-shift bg-gradient-to-br from-cyan-900/50 via-purple-900/50 via-pink-900/50 to-black bg-[length:200%_200%]" />
+      <div className="absolute inset-0 bg-black" />
+      <div className="absolute inset-0 bg-gradient-to-br from-black via-cyan-950/80 via-purple-950/80 via-pink-950/80 to-black" />
+      <div className="absolute inset-0 animate-gradient-shift bg-gradient-to-br from-cyan-950/30 via-purple-950/30 via-pink-950/30 to-black bg-[length:200%_200%]" />
       
       <div className="relative z-10 flex flex-col items-center text-center">
-        <h1 className="mb-6 inline-block bg-white px-8 py-4 text-5xl font-bold tracking-tight text-black shadow-[0_0_30px_rgba(255,255,255,0.3)] sm:text-6xl md:text-7xl">
-          {user.name}
-        </h1>
+        <div className="relative inline-block">
+          {/* Moving glow effect */}
+          <div className="absolute inset-0 -z-10 animate-glow-move rounded-lg bg-gradient-to-r from-cyan-400 via-purple-500 via-pink-500 to-cyan-400 bg-[length:200%_100%] blur-2xl opacity-60" />
+          <h1 className="relative mb-6 inline-block bg-white px-8 py-4 text-5xl font-bold tracking-tight text-black shadow-[0_0_30px_rgba(255,255,255,0.3)] sm:text-6xl md:text-7xl">
+            {user.name}
+          </h1>
+        </div>
         <p className="mb-10 max-w-2xl text-xl leading-relaxed text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)] sm:text-2xl">
           {user.bio}
         </p>

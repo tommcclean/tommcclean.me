@@ -8,7 +8,7 @@ A modern personal website built with Next.js, TypeScript, and Redux Toolkit.
 - 🔷 **TypeScript** for type safety
 - 🎨 **Tailwind CSS** for styling
 - 🔄 **Redux Toolkit** for state management
-- 🌓 **Dark/Light theme** support
+- 🌓 **System theme** support (follows OS preference)
 - 📱 **Responsive design**
 
 ## Getting Started
@@ -35,7 +35,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 │   ├── page.tsx           # Home page
 │   └── globals.css        # Global styles
 ├── components/            # React components
-│   ├── Header.tsx        # Navigation header with theme toggle
+│   ├── Header.tsx        # Navigation header
 │   ├── Hero.tsx          # Hero section
 │   ├── About.tsx         # About section
 │   ├── Projects.tsx      # Projects showcase
@@ -46,7 +46,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 │   ├── store.ts          # Redux store configuration
 │   ├── hooks.ts          # Typed Redux hooks
 │   └── slices/           # Redux slices
-│       ├── themeSlice.ts # Theme state management
 │       └── userSlice.ts  # User info state management
 └── public/               # Static assets
 ```
@@ -55,23 +54,25 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 The project uses Redux Toolkit for state management. The store is configured in `lib/store.ts` and includes:
 
-- **Theme Slice**: Manages light/dark/system theme preferences
 - **User Slice**: Stores user information (name, title, bio, etc.)
 
 ### Using Redux in Components
 
 ```typescript
 import { useAppSelector, useAppDispatch } from '@/lib/hooks';
-import { toggleTheme } from '@/lib/slices/themeSlice';
+import { updateUser } from '@/lib/slices/userSlice';
 
 function MyComponent() {
-  const theme = useAppSelector((state) => state.theme.theme);
+  const user = useAppSelector((state) => state.user);
   const dispatch = useAppDispatch();
   
   return (
-    <button onClick={() => dispatch(toggleTheme())}>
-      Current theme: {theme}
-    </button>
+    <div>
+      <p>{user.name}</p>
+      <button onClick={() => dispatch(updateUser({ name: 'New Name' }))}>
+        Update Name
+      </button>
+    </div>
   );
 }
 ```

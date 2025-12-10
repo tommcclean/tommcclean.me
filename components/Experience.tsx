@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface Job {
   company: string;
@@ -10,6 +11,7 @@ interface Job {
   location?: string;
   startYear?: number;
   endYear?: number | 'Present';
+  logo?: string;
 }
 
 export default function Experience() {
@@ -91,84 +93,31 @@ export default function Experience() {
         <h2 className="mb-8 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
           Experience
         </h2>
-        <div className="relative pl-16">
-          {/* Timeline line */}
-          <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-zinc-300 dark:bg-zinc-700" />
-          
-          <div className="space-y-8">
-            {/* Always visible jobs */}
-            {visibleJobs.map((job, index) => (
-              <div key={index} className="relative">
-                {/* Timeline marker and year */}
-                <div className="absolute -left-10 top-0 flex flex-col items-center gap-2">
-                  <div className="relative z-10 h-4 w-4 -translate-x-1/2 rounded-full border-2 border-zinc-300 bg-white dark:border-zinc-700 dark:bg-black" />
-                  {job.startYear && (
-                    <div className="text-sm font-medium text-zinc-600 dark:text-zinc-400 whitespace-nowrap">
-                      {job.startYear}
-                    </div>
-                  )}
-                  {job.endYear && job.endYear !== job.startYear && (
-                    <div className="text-sm font-medium text-zinc-600 dark:text-zinc-400 whitespace-nowrap">
-                      {job.endYear}
-                    </div>
-                  )}
-                </div>
-                
-                {/* Job card */}
-                <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
-              <div className="mb-4">
-                <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">
-                  {job.company}
-                </h3>
-                <p className="mt-1 text-lg text-zinc-700 dark:text-zinc-300">
-                  {job.position}
-                </p>
-                <div className="mt-1 flex flex-wrap items-center gap-2 text-zinc-600 dark:text-zinc-400">
-                  {job.location && (
-                    <>
-                      <span>{job.location}</span>
-                      <span>•</span>
-                    </>
-                  )}
-                  <span>{job.period}</span>
-                </div>
-              </div>
-              <ul className="ml-4 list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
-                {job.description.map((item, itemIndex) => (
-                  <li key={itemIndex}>{item}</li>
-                ))}
-                </ul>
-                </div>
-              </div>
-            ))}
-
-            {/* Collapsible hidden jobs */}
-            <div
-              className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                isExpanded ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0'
-              }`}
-            >
-              <div className="space-y-8">
-                {isExpanded && hiddenJobs.map((job, index) => (
-                  <div key={index + 2} className="relative">
-                    {/* Timeline marker and year */}
-                    <div className="absolute -left-10 top-0 flex flex-col items-center gap-2">
-                      <div className="relative z-10 h-4 w-4 -translate-x-1/2 rounded-full border-2 border-zinc-300 bg-white dark:border-zinc-700 dark:bg-black" />
-                      {job.startYear && (
-                        <div className="text-sm font-medium text-zinc-600 dark:text-zinc-400 whitespace-nowrap">
-                          {job.startYear}
-                        </div>
-                      )}
-                      {job.endYear && job.endYear !== job.startYear && (
-                        <div className="text-sm font-medium text-zinc-600 dark:text-zinc-400 whitespace-nowrap">
-                          {job.endYear}
-                        </div>
+        <div className="space-y-8">
+          {/* Always visible jobs */}
+          {visibleJobs.map((job, index) => (
+            <div key={index}>
+              {/* Job card */}
+              <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
+                <div className="mb-4 flex items-start gap-4">
+                  {/* Logo box */}
+                  <div className="flex-shrink-0">
+                    <div className="flex h-20 w-20 items-center justify-center rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
+                      {job.logo ? (
+                        <Image
+                          src={job.logo}
+                          alt={`${job.company} logo`}
+                          width={72}
+                          height={72}
+                          className="h-full w-full object-contain p-2"
+                        />
+                      ) : (
+                        <div className="h-full w-full bg-zinc-100 dark:bg-zinc-800" />
                       )}
                     </div>
-                    
-                    {/* Job card */}
-                    <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
-                  <div className="mb-4">
+                  </div>
+                  
+                  <div className="flex-1">
                     <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">
                       {job.company}
                     </h3>
@@ -185,22 +134,91 @@ export default function Experience() {
                       <span>{job.period}</span>
                     </div>
                   </div>
-                  <ul className="ml-4 list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
-                    {job.description.map((item, itemIndex) => (
-                      <li key={itemIndex}>{item}</li>
-                    ))}
-                    </ul>
-                    </div>
-                  </div>
-                ))}
+                </div>
+                <ul className="ml-4 list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                  {job.description.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
               </div>
+            </div>
+          ))}
+
+          {/* Collapsible hidden jobs */}
+          <div
+            className={`overflow-hidden transition-all duration-500 ease-in-out ${
+              isExpanded ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0'
+            }`}
+          >
+            <div className="space-y-8">
+              {hiddenJobs.map((job, index) => (
+                <div key={index + 2}>
+                  {/* Job card */}
+                  <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
+                    <div className="mb-4 flex items-start gap-4">
+                      {/* Logo box */}
+                      <div className="flex-shrink-0">
+                        <div className="flex h-16 w-16 items-center justify-center rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
+                          {job.logo ? (
+                            <Image
+                              src={job.logo}
+                              alt={`${job.company} logo`}
+                              width={56}
+                              height={56}
+                              className="h-full w-full object-contain p-2"
+                            />
+                          ) : (
+                            <div className="h-full w-full bg-zinc-100 dark:bg-zinc-800" />
+                          )}
+                        </div>
+                      </div>
+                      
+                      <div className="flex-1">
+                        <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">
+                          {job.company}
+                        </h3>
+                        <p className="mt-1 text-lg text-zinc-700 dark:text-zinc-300">
+                          {job.position}
+                        </p>
+                        <div className="mt-1 flex flex-wrap items-center gap-2 text-zinc-600 dark:text-zinc-400">
+                          {job.location && (
+                            <>
+                              <span>{job.location}</span>
+                              <span>•</span>
+                            </>
+                          )}
+                          <span>{job.period}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <ul className="ml-4 list-disc space-y-2 text-zinc-600 dark:text-zinc-400">
+                      {job.description.map((item, itemIndex) => (
+                        <li key={itemIndex}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       {hasMore && (
         <div className="mt-8 text-center">
           <button
-            onClick={() => setIsExpanded(!isExpanded)}
+            onClick={() => {
+              const wasExpanded = isExpanded;
+              setIsExpanded(!isExpanded);
+              
+              // If collapsing, scroll to experience section after animation completes
+              if (wasExpanded) {
+                setTimeout(() => {
+                  const experienceSection = document.getElementById('experience');
+                  if (experienceSection) {
+                    experienceSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
+                }, 500); // Wait for the 500ms collapse animation to complete
+              }
+            }}
             className="relative inline-flex cursor-pointer items-center gap-2 rounded-lg border border-zinc-300 bg-white px-6 py-3 font-medium text-zinc-700 transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
           >
             {isExpanded ? 'Show Less' : 'Show More'}
