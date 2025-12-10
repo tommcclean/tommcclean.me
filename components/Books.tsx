@@ -7,6 +7,7 @@ interface Book {
   author: string;
   description?: string;
   cover?: string;
+  rating?: number; // Rating out of 5
 }
 
 export default function Books() {
@@ -16,6 +17,7 @@ export default function Books() {
       author: 'Thomas Erikson',
       description: 'A practical guide to understanding different personality types and improving communication.',
       cover: '/images/surrounded-by-idiots.jpg',
+      rating: 4,
     },
   ];
 
@@ -52,6 +54,26 @@ export default function Books() {
                 <p className="mb-3 text-sm font-medium text-zinc-600 dark:text-zinc-400">
                   by {book.author}
                 </p>
+                {book.rating !== undefined && (
+                  <div className="mb-3 flex items-center gap-1">
+                    {[...Array(5)].map((_, i) => (
+                      <svg
+                        key={i}
+                        className={`h-4 w-4 ${
+                          i < book.rating!
+                            ? 'fill-yellow-400 text-yellow-400'
+                            : 'fill-zinc-300 text-zinc-300 dark:fill-zinc-700 dark:text-zinc-700'
+                        }`}
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                      </svg>
+                    ))}
+                    <span className="ml-2 text-sm text-zinc-600 dark:text-zinc-400">
+                      {book.rating}/5
+                    </span>
+                  </div>
+                )}
                 {book.description && (
                   <p className="text-zinc-600 dark:text-zinc-400">
                     {book.description}

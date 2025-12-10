@@ -25,9 +25,21 @@ export default function Contact() {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
-    // TODO: Add actual form submission logic here
-    // For now, simulate a submission
-    setTimeout(() => {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
@@ -36,7 +48,16 @@ export default function Contact() {
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 5000);
-    }, 1000);
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setIsSubmitting(false);
+      setSubmitStatus('error');
+      
+      // Reset error message after 5 seconds
+      setTimeout(() => {
+        setSubmitStatus('idle');
+      }, 5000);
+    }
   };
 
   return (

@@ -8,17 +8,27 @@ export default function About() {
           About Me
         </h2>
         <div className="grid gap-8 md:grid-cols-2">
-          <div className="space-y-4 text-zinc-600 dark:text-zinc-400">
-            <p>
-              I'm a passionate developer who loves building beautiful and functional
-              web applications. With expertise in modern web technologies, I create
-              solutions that are both elegant and performant.
-            </p>
-            <p>
-              When I'm not coding, you can find me exploring new technologies,
-              contributing to open source projects, or sharing knowledge with the
-              developer community.
-            </p>
+          <div className="space-y-6">
+            <div className="space-y-4 text-zinc-600 dark:text-zinc-400">
+              <p>
+                I'm a passionate developer who loves building beautiful and functional
+                web applications. With expertise in modern web technologies, I create
+                solutions that are both elegant and performant.
+              </p>
+              <p>
+                When I'm not coding, you can find me exploring new technologies,
+                contributing to open source projects, or sharing knowledge with the
+                developer community.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">
+                Hobbies
+              </h3>
+              <p className="text-zinc-600 dark:text-zinc-400">
+                Add your hobbies and interests here.
+              </p>
+            </div>
           </div>
           <div className="space-y-6">
             <div className="space-y-4">
