@@ -63,3 +63,4 @@ const projectsSlice = createSlice({
 export const { updateProjects, updateProjectsList, addProject, removeProject } = projectsSlice.actions;
 export default projectsSlice.reducer;
 
+

@@ -31,7 +31,7 @@ const initialState: ExperienceState = {
         'I lead the Web Foundations team at Just Eat Takeaway, we are a force multiplier team which enables all other teams to deliver the features our customers love.',
         'I manage a team of 8 engineers who are responsible for the core infrastructure of our web applications.',
         'My role also involves managing the roadmap and projects to ensure we deliver the most valuable work at the right time, in the right way.',
-        'I played a significant and prominent role in the consolidation of web multiple platforms into one.'
+        'I played a significant and prominent role in the consolidation of multiple web platforms into one.'
       ],
     },
     {
@@ -84,7 +84,7 @@ const initialState: ExperienceState = {
       description: [
         'I joined EDM Group straight out of University, suceeding in completing the Graduate Programme',
         'I worked on both external solutions for clients in the automotive sector, providing Pensions Auto Enrollment solutions.',
-        'I worked extensively to build internal software used by the companies various digitisation facilities to create consistent and simple processes.'
+        'I worked extensively to build internal software used by the companies various digitisation facilities (including on site) to create consistent and simple processes.'
       ],
     },
   ],

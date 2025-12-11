@@ -38,15 +38,26 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 │   ├── Header.tsx        # Navigation header
 │   ├── Hero.tsx          # Hero section
 │   ├── About.tsx         # About section
+│   ├── Experience.tsx    # Experience section
 │   ├── Projects.tsx      # Projects showcase
-│   ├── Footer.tsx        # Footer component
+│   ├── Books.tsx         # Books section
+│   ├── Certifications.tsx # Certifications section
+│   ├── Contact.tsx       # Contact section
 │   ├── ReduxProvider.tsx # Redux store provider
 │   └── ThemeProvider.tsx # Theme management
 ├── lib/                  # Utilities and Redux setup
 │   ├── store.ts          # Redux store configuration
 │   ├── hooks.ts          # Typed Redux hooks
 │   └── slices/           # Redux slices
-│       └── userSlice.ts  # User info state management
+│       ├── userSlice.ts       # User info state management
+│       ├── socialSlice.ts     # Social media links
+│       ├── aboutSlice.ts       # About section content
+│       ├── experienceSlice.ts  # Experience/jobs data
+│       ├── projectsSlice.ts    # Projects data
+│       ├── booksSlice.ts       # Books data
+│       ├── certificationsSlice.ts # Certifications data
+│       ├── contactSlice.ts     # Contact section content
+│       └── navigationSlice.ts  # Navigation menu items
 └── public/               # Static assets
 ```
 
@@ -54,7 +65,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 The project uses Redux Toolkit for state management. The store is configured in `lib/store.ts` and includes:
 
-- **User Slice**: Stores user information (name, title, bio, etc.)
+- **User Slice**: Stores user information (name, title, bio, location, profile picture)
+- **Social Slice**: Stores social media links (LinkedIn, GitHub, Twitter)
+- **About Slice**: Stores about section content (paragraphs, skills, hobbies)
+- **Experience Slice**: Stores work experience/jobs data
+- **Projects Slice**: Stores projects data
+- **Books Slice**: Stores books data
+- **Certifications Slice**: Stores certifications and credentials
+- **Contact Slice**: Stores contact section content
+- **Navigation Slice**: Stores navigation menu items
 
 ### Using Redux in Components
 

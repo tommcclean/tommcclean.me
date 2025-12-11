@@ -5,8 +5,8 @@ export interface Book {
   author: string;
   description?: string;
   cover?: string;
-  logo?: string; // Publisher or author logo
-  rating?: number; // Rating out of 5
+      logo?: string;
+      rating?: number;
 }
 
 interface BooksState {
@@ -24,7 +24,7 @@ const initialState: BooksState = {
       author: 'Thomas Erikson',
       description: 'A practical guide to understanding different personality types and improving communication.',
       cover: '/images/surrounded-by-idiots.jpg',
-      logo: '/images/surrounded-by-idiots.png', // Add your logo image to public/images/
+      logo: '/images/surrounded-by-idiots.png',
       rating: 4,
     },
   ],

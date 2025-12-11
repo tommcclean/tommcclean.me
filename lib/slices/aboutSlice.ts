@@ -20,9 +20,9 @@ interface AboutState {
 const initialState: AboutState = {
   title: 'About Me',
   paragraphs: [
-    "My name is Thomas, I am a futurist and technology enthusiast. I am currently working as a Technology Manager but I have 15 years of experience as a Web focused Software Engineer.",
-    "One of my main passions is building new technologies that I can personally use, but I also like growing them to a wider audience and delivering value to others.",
-    "I am particularly keen on privacy and transparency, often a key feature of the software I build because I would rather see a web that respects your data rather than profits from it."
+    "My name is Thomas, I am a futurist and technology enthusiast. I currently work as a Technology Manager and I also have 15 years of experience as a Web focused Software Engineer.",
+    "One of my main passions is building new technologies that I can personally use, I love to scale them once they are right for me to deliver value to others too.",
+    "I am a keen advocate for privacy and transparency, often a key feature of the software I build because I would rather see a web that respects your data rather than profits from it."
   ],
   hobbies: {
     title: 'Hobbies',

@@ -9,7 +9,7 @@ export default function Books() {
   const books: Book[] = booksState.books;
 
   return (
-    <section id="books" className="border-t-2 border-zinc-300 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-950">
+    <section id="books" className="border-t-2 border-zinc-300 bg-white dark:border-zinc-700 dark:bg-black">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <h2 className="mb-8 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
           {booksState.title}

@@ -7,7 +7,6 @@ import projectsReducer from './slices/projectsSlice';
 import booksReducer from './slices/booksSlice';
 import contactReducer from './slices/contactSlice';
 import navigationReducer from './slices/navigationSlice';
-import footerReducer from './slices/footerSlice';
 import certificationsReducer from './slices/certificationsSlice';
 
 export const makeStore = () => {
@@ -21,7 +20,6 @@ export const makeStore = () => {
       books: booksReducer,
       contact: contactReducer,
       navigation: navigationReducer,
-      footer: footerReducer,
       certifications: certificationsReducer,
     },
   });
