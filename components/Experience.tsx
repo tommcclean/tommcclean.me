@@ -95,9 +95,9 @@ export default function Experience() {
                 <div key={index + 2}>
                   {/* Job card */}
                   <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
-                    <div className="mb-4 flex items-start gap-4">
+                    <div className="mb-4 flex flex-col items-center gap-4 sm:flex-row sm:items-start">
                       {/* Logo box */}
-                      <div className="mr-4 flex-shrink-0">
+                      <div className="flex-shrink-0 sm:mr-4">
                         <div className="flex h-16 w-16 items-center justify-center rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
                           {job.logo ? (
                             <Image
@@ -113,7 +113,7 @@ export default function Experience() {
                         </div>
                       </div>
                       
-                      <div className="flex-1">
+                      <div className="flex-1 text-center sm:text-left">
                         <h3 className="text-xl font-semibold text-zinc-900 dark:text-zinc-100">
                           {job.company}
                         </h3>
