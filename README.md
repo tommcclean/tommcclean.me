@@ -5,6 +5,7 @@ A modern personal website built with Next.js, TypeScript, and Redux Toolkit.
 ## Features
 
 - ⚡ **Next.js 16** with App Router
+- 📦 **Static Site Generation** - Fully static export for fast, CDN-friendly deployment
 - 🔷 **TypeScript** for type safety
 - 🎨 **Tailwind CSS** for styling
 - 🔄 **Redux Toolkit** for state management
@@ -26,6 +27,16 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Building for Production
+
+This site is configured for static site generation. To build a static export:
+
+```bash
+npm run build
+```
+
+This will generate a static site in the `out/` directory that can be deployed to any static hosting service (Cloudflare Pages, Vercel, Netlify, GitHub Pages, etc.).
 
 ## Project Structure
 
