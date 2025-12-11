@@ -24,7 +24,7 @@ export default function Books() {
               className="group overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
             >
               {book.cover && (
-                <div className="relative h-64 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+                <div className="relative h-96 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
                   <Image
                     src={book.cover}
                     alt={`${book.title} by ${book.author} cover`}

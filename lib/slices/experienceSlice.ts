@@ -13,11 +13,13 @@ export interface Job {
 
 interface ExperienceState {
   title: string;
+  description?: string;
   jobs: Job[];
 }
 
 const initialState: ExperienceState = {
   title: 'Experience',
+  description: 'I have been working in the tech industry for nearly 20 years, mostly as an Engineer focused on the Web as a platform.',
   jobs: [
     {
       company: 'Just Eat Takeaway',
@@ -82,7 +84,7 @@ const initialState: ExperienceState = {
       startDate: 'December 2010',
       endDate: 'January 2015',
       description: [
-        'I joined EDM Group straight out of University, suceeding in completing the Graduate Programme',
+        'I joined EDM Group straight out of University. I was successful in completing the Graduate Programme',
         'I worked on both external solutions for clients in the automotive sector, providing Pensions Auto Enrollment solutions.',
         'I worked extensively to build internal software used by the companies various digitisation facilities (including on site) to create consistent and simple processes.'
       ],

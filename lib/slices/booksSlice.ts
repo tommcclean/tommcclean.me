@@ -17,7 +17,7 @@ interface BooksState {
 
 const initialState: BooksState = {
   title: 'Favourite Books',
-  description: 'A collection of books that have inspired and influenced my thinking.',
+  description: 'Since becoming a Technology Manager I have been search for the best to help me grow and expand my knowledge.',
   books: [
     {
       title: 'Surrounded by Idiots',

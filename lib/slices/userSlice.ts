@@ -13,6 +13,7 @@ const initialState: UserState = {
   title: 'Technology Manager and Software Engineer',
   bio: 'Technology Manager for Web Foundations at Just Eat Takeaway',
   location: 'Bristol, UK',
+  profilePicture: '/images/avatar.jpg',
 };
 
 const userSlice = createSlice({

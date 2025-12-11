@@ -18,9 +18,14 @@ export default function Experience() {
   return (
     <section id="experience" className="border-t-2 border-zinc-300 bg-white dark:border-zinc-700 dark:bg-black">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="mb-8 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
+        <h2 className="mb-4 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
           {experience.title}
         </h2>
+        {experience.description && (
+          <p className="mb-8 text-lg text-zinc-600 dark:text-zinc-400">
+            {experience.description}
+          </p>
+        )}
         <div className="space-y-8">
           {/* Always visible jobs */}
           {visibleJobs.map((job, index) => (

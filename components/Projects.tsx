@@ -24,7 +24,7 @@ export default function Projects() {
             className="group overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm transition-all hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
           >
             {project.image && (
-              <div className="relative h-64 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+              <div className="relative h-80 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
                 <Image
                   src={project.image}
                   alt={`${project.title} screenshot`}
