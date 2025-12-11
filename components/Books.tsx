@@ -1,34 +1,21 @@
 'use client';
 
 import Image from 'next/image';
-
-interface Book {
-  title: string;
-  author: string;
-  description?: string;
-  cover?: string;
-  rating?: number; // Rating out of 5
-}
+import { useAppSelector } from '@/lib/hooks';
+import type { Book } from '@/lib/slices/booksSlice';
 
 export default function Books() {
-  const books: Book[] = [
-    {
-      title: 'Surrounded by Idiots',
-      author: 'Thomas Erikson',
-      description: 'A practical guide to understanding different personality types and improving communication.',
-      cover: '/images/surrounded-by-idiots.jpg',
-      rating: 4,
-    },
-  ];
+  const booksState = useAppSelector((state) => state.books);
+  const books: Book[] = booksState.books;
 
   return (
     <section id="books" className="border-t-2 border-zinc-300 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-950">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <h2 className="mb-8 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
-          Favourite Books
+          {booksState.title}
         </h2>
         <p className="mb-8 text-lg text-zinc-600 dark:text-zinc-400">
-          A collection of books that have inspired and influenced my thinking.
+          {booksState.description}
         </p>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {books.map((book, index) => (

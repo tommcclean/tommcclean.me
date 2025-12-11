@@ -1,47 +1,21 @@
 'use client';
 
 import Image from 'next/image';
-
-interface Project {
-  title: string;
-  description: string;
-  tech: string[];
-  image?: string;
-  link?: string;
-}
+import { useAppSelector } from '@/lib/hooks';
+import type { Project } from '@/lib/slices/projectsSlice';
 
 export default function Projects() {
-  const projects: Project[] = [
-    {
-      title: 'BattleBlox',
-      description: 'A web-based game I created featuring turn-based strategy gameplay.',
-      tech: ['Web Game', 'JavaScript', 'HTML5'],
-      image: '/images/battleblox.png',
-      link: 'https://battleblox.tommcclean.me',
-    },
-    {
-      title: 'Animal Crossing Portal',
-      description: 'A comprehensive portal website for Animal Crossing fans with resources, guides, and community features.',
-      tech: ['Web Portal', 'Next.js', 'TypeScript'],
-      image: '/images/animalcrossingportal.png',
-      link: 'https://www.animalcrossingportal.com',
-    },
-    {
-      title: 'Manager Toolkit',
-      description: 'A comprehensive toolkit for technology managers to streamline workflows and improve team productivity.',
-      tech: ['Management Tools', 'Web Application'],
-      image: '/images/managertoolkit.png',
-    },
-  ];
+  const projectsState = useAppSelector((state) => state.projects);
+  const projects: Project[] = projectsState.projects;
 
   return (
     <section id="projects" className="border-t-2 border-zinc-300 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-950">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <h2 className="mb-4 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
-          Projects
+          {projectsState.title}
         </h2>
         <p className="mb-8 text-lg text-zinc-600 dark:text-zinc-400">
-          I am always working on something fun, I am driven to build new technologies that I can personally use and share with others to enjoy.
+          {projectsState.description}
         </p>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
@@ -50,7 +24,7 @@ export default function Projects() {
             className="group overflow-hidden rounded-lg border border-zinc-200 bg-white shadow-sm transition-all hover:shadow-lg dark:border-zinc-800 dark:bg-zinc-900"
           >
             {project.image && (
-              <div className="relative h-48 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+              <div className="relative h-64 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
                 <Image
                   src={project.image}
                   alt={`${project.title} screenshot`}

@@ -2,85 +2,13 @@
 
 import { useState } from 'react';
 import Image from 'next/image';
-
-interface Job {
-  company: string;
-  position: string;
-  period: string;
-  description: string[];
-  location?: string;
-  startYear?: number;
-  endYear?: number | 'Present';
-  logo?: string;
-}
+import { useAppSelector } from '@/lib/hooks';
+import type { Job } from '@/lib/slices/experienceSlice';
 
 export default function Experience() {
   const [isExpanded, setIsExpanded] = useState(false);
-  
-  const jobs: Job[] = [
-    {
-      company: 'Just Eat Takeaway',
-      position: 'Technology Manager',
-      period: 'Present',
-      location: 'Bristol, UK',
-      startYear: 2023,
-      endYear: 'Present',
-      description: [
-        'Leading engineering teams to deliver high-quality software solutions',
-        'Managing technology strategy and implementation',
-        'Overseeing project delivery and team performance',
-      ],
-    },
-    {
-      company: 'Just Eat Takeaway',
-      position: 'Senior Software Engineer',
-      period: 'Previous',
-      location: 'Bristol, UK',
-      startYear: 2021,
-      endYear: 2023,
-      description: [
-        'Building scalable web applications and systems',
-        'Designing and implementing robust software solutions',
-        'Collaborating with cross-functional teams on technical initiatives',
-      ],
-    },
-    {
-      company: 'Team River',
-      position: 'Software Engineer',
-      period: 'Previous',
-      startYear: 2020,
-      endYear: 2021,
-      description: [
-        'Built a SaaS tool for companies to monitor and collaborate around improving key KPIs',
-        'Developed features for real-time KPI tracking and team collaboration',
-        'Created intuitive interfaces for data visualization and performance metrics',
-      ],
-    },
-    {
-      company: 'River Agency',
-      position: 'Web Developer',
-      period: 'Previous',
-      startYear: 2019,
-      endYear: 2020,
-      description: [
-        'Built websites for the automotive sector to improve key metrics and drive dealerships towards excellent customer service',
-        'Developed custom web solutions tailored to automotive dealership needs',
-        'Focused on improving user experience and conversion metrics for automotive clients',
-      ],
-    },
-    {
-      company: 'EDM Group',
-      position: 'Software Engineer',
-      period: 'Previous',
-      startYear: 2018,
-      endYear: 2019,
-      description: [
-        'Developed and maintained software applications',
-        'Collaborated with cross-functional teams to deliver high-quality solutions',
-        'Implemented best practices for code quality and system architecture',
-      ],
-    },
-  ];
+  const experience = useAppSelector((state) => state.experience);
+  const jobs: Job[] = experience.jobs;
 
   const hasMore = jobs.length > 2;
   const hiddenCount = isExpanded ? 0 : jobs.length - 2;
@@ -91,7 +19,7 @@ export default function Experience() {
     <section id="experience" className="border-t-2 border-zinc-300 bg-white dark:border-zinc-700 dark:bg-black">
       <div className="mx-auto max-w-6xl px-6 py-20">
         <h2 className="mb-8 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
-          Experience
+          {experience.title}
         </h2>
         <div className="space-y-8">
           {/* Always visible jobs */}
@@ -101,7 +29,7 @@ export default function Experience() {
               <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
                 <div className="mb-4 flex items-start gap-4">
                   {/* Logo box */}
-                  <div className="flex-shrink-0">
+                  <div className="mr-4 flex-shrink-0">
                     <div className="flex h-20 w-20 items-center justify-center rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
                       {job.logo ? (
                         <Image
@@ -109,10 +37,10 @@ export default function Experience() {
                           alt={`${job.company} logo`}
                           width={72}
                           height={72}
-                          className="h-full w-full object-contain p-2"
+                          className="h-full w-full rounded-lg object-contain"
                         />
                       ) : (
-                        <div className="h-full w-full bg-zinc-100 dark:bg-zinc-800" />
+                        <div className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-800" />
                       )}
                     </div>
                   </div>
@@ -131,7 +59,14 @@ export default function Experience() {
                           <span>•</span>
                         </>
                       )}
-                      <span>{job.period}</span>
+                      {job.startDate && job.endDate && (
+                        <span>
+                          {job.startDate} - {job.endDate}
+                        </span>
+                      )}
+                      {!job.startDate && !job.endDate && job.period && (
+                        <span>{job.period}</span>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -157,7 +92,7 @@ export default function Experience() {
                   <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
                     <div className="mb-4 flex items-start gap-4">
                       {/* Logo box */}
-                      <div className="flex-shrink-0">
+                      <div className="mr-4 flex-shrink-0">
                         <div className="flex h-16 w-16 items-center justify-center rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
                           {job.logo ? (
                             <Image
@@ -165,10 +100,10 @@ export default function Experience() {
                               alt={`${job.company} logo`}
                               width={56}
                               height={56}
-                              className="h-full w-full object-contain p-2"
+                              className="h-full w-full rounded-lg object-contain"
                             />
                           ) : (
-                            <div className="h-full w-full bg-zinc-100 dark:bg-zinc-800" />
+                            <div className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-800" />
                           )}
                         </div>
                       </div>
@@ -187,7 +122,14 @@ export default function Experience() {
                               <span>•</span>
                             </>
                           )}
-                          <span>{job.period}</span>
+                          {job.startDate && job.endDate && (
+                            <span>
+                              {job.startDate} - {job.endDate}
+                            </span>
+                          )}
+                          {!job.startDate && !job.endDate && job.period && (
+                            <span>{job.period}</span>
+                          )}
                         </div>
                       </div>
                     </div>

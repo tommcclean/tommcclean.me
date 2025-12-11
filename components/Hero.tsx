@@ -4,6 +4,7 @@ import { useAppSelector } from '@/lib/hooks';
 
 export default function Hero() {
   const user = useAppSelector((state) => state.user);
+  const social = useAppSelector((state) => state.social);
 
   const scrollToAbout = () => {
     const aboutSection = document.getElementById('about');
@@ -36,7 +37,7 @@ export default function Hero() {
             <span className="font-medium text-white drop-shadow-md">{user.location}</span>
           </div>
           <a
-            href="https://www.linkedin.com/in/tommccleanuk"
+            href={social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex cursor-pointer items-center gap-2 rounded-full bg-white/10 px-4 py-2 backdrop-blur-sm transition-all hover:bg-white/20 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]"
@@ -49,7 +50,7 @@ export default function Hero() {
             </span>
           </a>
           <a
-            href="https://github.com/tommcclean"
+            href={social.github}
             target="_blank"
             rel="noopener noreferrer"
             className="group flex cursor-pointer items-center gap-2 rounded-full bg-white/10 px-4 py-2 backdrop-blur-sm transition-all hover:bg-white/20 hover:shadow-[0_0_20px_rgba(34,211,238,0.5)]"

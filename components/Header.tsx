@@ -1,8 +1,10 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
+import { useAppSelector } from '@/lib/hooks';
 
 export default function Header() {
+  const navigation = useAppSelector((state) => state.navigation);
   const [activeSection, setActiveSection] = useState<string>('home');
   const [bouncingId, setBouncingId] = useState<string | null>(null);
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -32,8 +34,10 @@ export default function Header() {
       });
     }, observerOptions);
 
-    // Observe all sections with IDs
-    const sections = ['about', 'experience', 'projects', 'books', 'contact'];
+    // Observe all sections with IDs from navigation state
+    const sections = navigation.items
+      .filter((item) => item.id !== 'home')
+      .map((item) => item.id);
     sections.forEach((id) => {
       const element = document.getElementById(id);
       if (element && observerRef.current) {
@@ -123,6 +127,12 @@ export default function Header() {
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
           </svg>
         );
+      case 'certifications':
+        return (
+          <svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+          </svg>
+        );
       case 'contact':
         return (
           <svg className={iconClass} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -134,19 +144,10 @@ export default function Header() {
     }
   };
 
-  const navItems = [
-    { label: 'Home', id: 'home' },
-    { label: 'About', id: 'about' },
-    { label: 'Experience', id: 'experience' },
-    { label: 'Projects', id: 'projects' },
-    { label: 'Books', id: 'books' },
-    { label: 'Contact', id: 'contact' },
-  ];
-
   return (
     <header className="fixed top-0 right-0 z-50 hidden md:block">
       <nav className="flex flex-col items-end gap-2 p-6">
-        {navItems.map((item) => {
+        {navigation.items.map((item) => {
           const isActive = activeSection === item.id;
           const isBouncing = bouncingId === item.id;
           
