@@ -38,6 +38,15 @@ npm run build
 
 This will generate a static site in the `out/` directory that can be deployed to any static hosting service (Cloudflare Pages, Vercel, Netlify, GitHub Pages, etc.).
 
+### Cloudflare Pages Deployment
+
+**Build Settings:**
+- **Build command**: `npm run build`
+- **Build output directory**: `out`
+- **Node version**: 20 (automatically detected from `.nvmrc`)
+
+The project is configured to ignore ESLint errors during builds to prevent deployment failures. Node version 20 is specified in both `.nvmrc` and `package.json` for consistency.
+
 ## Project Structure
 
 ```
