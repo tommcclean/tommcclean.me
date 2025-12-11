@@ -25,7 +25,7 @@ export default function Certifications() {
               key={index}
               className="group overflow-hidden rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
             >
-              <div className="flex items-start gap-6">
+              <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start">
                 {cert.logo && (
                   <div className="flex-shrink-0">
                     <div className="flex h-20 w-20 items-center justify-center rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
@@ -39,7 +39,7 @@ export default function Certifications() {
                     </div>
                   </div>
                 )}
-                <div className="flex-1">
+                <div className="flex-1 text-center sm:text-left">
                   <h3 className="mb-2 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
                     {cert.credentialUrl ? (
                       <a
@@ -57,7 +57,7 @@ export default function Certifications() {
                   <p className="mb-4 text-lg text-zinc-600 dark:text-zinc-400">
                     {cert.issuer}
                   </p>
-                  <div className="mb-4 flex flex-wrap gap-4 text-sm text-zinc-600 dark:text-zinc-400">
+                  <div className="mb-4 flex flex-wrap justify-center gap-4 text-sm text-zinc-600 dark:text-zinc-400 sm:justify-start">
                     <div>
                       <span className="font-medium">Issued:</span> {cert.issueDate}
                     </div>
