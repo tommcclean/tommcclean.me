@@ -32,6 +32,14 @@ export default function Projects() {
                   className="object-cover transition-transform group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
+                {project.badge && (
+                  <span
+                    className="absolute right-3 top-3 rounded-md bg-amber-500 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-white shadow-sm"
+                    aria-label={`${project.title} is in ${project.badge}`}
+                  >
+                    {project.badge}
+                  </span>
+                )}
               </div>
             )}
             <div className="p-6">

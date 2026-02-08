@@ -4,6 +4,10 @@ import Image from 'next/image';
 import { useAppSelector } from '@/lib/hooks';
 import type { Book } from '@/lib/slices/booksSlice';
 
+function isExternalUrl(src: string) {
+  return src.startsWith('http://') || src.startsWith('https://');
+}
+
 export default function Books() {
   const booksState = useAppSelector((state) => state.books);
   const books: Book[] = booksState.books;
@@ -25,13 +29,24 @@ export default function Books() {
             >
               {book.cover && (
                 <div className="relative h-96 w-full overflow-hidden bg-zinc-100 dark:bg-zinc-800">
-                  <Image
-                    src={book.cover}
-                    alt={`${book.title} by ${book.author} cover`}
-                    fill
-                    className="object-cover transition-transform group-hover:scale-105"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
+                  {isExternalUrl(book.cover) ? (
+                    <img
+                      src={book.cover}
+                      alt={`${book.title} by ${book.author} cover`}
+                      className="h-full w-full object-cover transition-transform group-hover:scale-105"
+                      onError={(e) => {
+                        e.currentTarget.src = '/images/coming-soon.webp';
+                      }}
+                    />
+                  ) : (
+                    <Image
+                      src={book.cover}
+                      alt={`${book.title} by ${book.author} cover`}
+                      fill
+                      className="object-cover transition-transform group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    />
+                  )}
                 </div>
               )}
               <div className="p-6">

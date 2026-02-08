@@ -6,6 +6,7 @@ export interface Project {
   tech: string[];
   image?: string;
   link?: string;
+  badge?: string;
 }
 
 interface ProjectsState {
@@ -33,10 +34,12 @@ const initialState: ProjectsState = {
       link: 'https://www.animalcrossingportal.com',
     },
     {
-      title: 'Manager Toolkit',
-      description: 'A new project that has not yet launched, designed for Technology Managers like me to solve common challenges in a simple and consistent way.',
+      title: 'Managers Toolkit',
+      description: 'A toolkit for Technology Managers to solve common challenges in a simple and consistent way. Now live and ready to use.',
       tech: ['Management Tools', 'Next.JS', 'React', 'Cursor', 'Artificial Intelligence', 'MongoDB', 'Auth0'],
-      image: '/images/coming-soon.webp',
+      image: '/images/toolkit.png',
+      link: 'https://toolkit.tommcclean.me',
+      badge: 'beta',
     },
   ],
 };

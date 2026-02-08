@@ -16,8 +16,8 @@ export default function Experience() {
   const hiddenJobs = jobs.slice(2);
 
   return (
-    <section id="experience" className="border-t-2 border-zinc-300 bg-white dark:border-zinc-700 dark:bg-black">
-      <div className="mx-auto max-w-6xl px-6 py-20">
+    <section id="experience" className="border-t border-zinc-200/80 bg-white/60 py-20 backdrop-blur-xl dark:border-zinc-700/80 dark:bg-zinc-950/60">
+      <div className="mx-auto max-w-6xl px-6">
         <h2 className="mb-4 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
           {experience.title}
         </h2>
@@ -31,11 +31,11 @@ export default function Experience() {
           {visibleJobs.map((job, index) => (
             <div key={index}>
               {/* Job card */}
-              <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
+              <div className="rounded-xl border border-zinc-200/60 bg-white/50 p-6 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5)] backdrop-blur-md transition-shadow hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5),0_4px_12px_rgba(0,0,0,0.05)] dark:border-white/15 dark:bg-white/10 dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] dark:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08),0_4px_12px_rgba(0,0,0,0.2)]">
                 <div className="mb-4 flex flex-col items-center gap-4 sm:flex-row sm:items-start">
                   {/* Logo box */}
                   <div className="flex-shrink-0 sm:mr-4">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
+                    <div className="flex h-20 w-20 items-center justify-center rounded-lg border border-zinc-200/60 bg-white/50 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5)] backdrop-blur-sm dark:border-white/15 dark:bg-white/10 dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]">
                       {job.logo ? (
                         <Image
                           src={job.logo}
@@ -45,7 +45,7 @@ export default function Experience() {
                           className="h-full w-full rounded-lg object-contain"
                         />
                       ) : (
-                        <div className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-800" />
+                        <div className="h-full w-full rounded-lg bg-white/30 dark:bg-white/5" />
                       )}
                     </div>
                   </div>
@@ -94,11 +94,11 @@ export default function Experience() {
               {hiddenJobs.map((job, index) => (
                 <div key={index + 2}>
                   {/* Job card */}
-                  <div className="rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900">
+                  <div className="rounded-xl border border-zinc-200/60 bg-white/50 p-6 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5)] backdrop-blur-md transition-shadow hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5),0_4px_12px_rgba(0,0,0,0.05)] dark:border-white/15 dark:bg-white/10 dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] dark:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08),0_4px_12px_rgba(0,0,0,0.2)]">
                     <div className="mb-4 flex flex-col items-center gap-4 sm:flex-row sm:items-start">
                       {/* Logo box */}
                       <div className="flex-shrink-0 sm:mr-4">
-                        <div className="flex h-16 w-16 items-center justify-center rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
+                        <div className="flex h-16 w-16 items-center justify-center rounded-lg border border-zinc-200/60 bg-white/50 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5)] backdrop-blur-sm dark:border-white/15 dark:bg-white/10 dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]">
                           {job.logo ? (
                             <Image
                               src={job.logo}
@@ -108,7 +108,7 @@ export default function Experience() {
                               className="h-full w-full rounded-lg object-contain"
                             />
                           ) : (
-                            <div className="h-full w-full rounded-lg bg-zinc-100 dark:bg-zinc-800" />
+                            <div className="h-full w-full rounded-lg bg-white/30 dark:bg-white/5" />
                           )}
                         </div>
                       </div>
@@ -166,11 +166,11 @@ export default function Experience() {
                 }, 500); // Wait for the 500ms collapse animation to complete
               }
             }}
-            className="relative inline-flex cursor-pointer items-center gap-2 rounded-lg border border-zinc-300 bg-white px-6 py-3 font-medium text-zinc-700 transition-colors hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800"
+            className="relative inline-flex cursor-pointer items-center gap-2 rounded-xl border border-zinc-200/60 bg-white/50 px-6 py-3 font-medium text-zinc-700 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5)] backdrop-blur-md transition-all hover:border-zinc-300/80 hover:bg-white/70 hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.6)] dark:border-white/15 dark:bg-white/10 dark:text-zinc-300 dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)] dark:hover:border-white/25 dark:hover:bg-white/15 dark:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.12)]"
           >
             {isExpanded ? 'Show Less' : 'Show More'}
             {!isExpanded && hiddenCount > 0 && (
-              <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-zinc-200 px-1.5 text-xs font-semibold text-zinc-700 dark:bg-zinc-700 dark:text-zinc-300">
+              <span className="flex h-5 min-w-5 items-center justify-center rounded-lg border border-zinc-200/60 bg-white/50 px-1.5 text-xs font-semibold text-zinc-700 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.5)] backdrop-blur-sm dark:border-white/15 dark:bg-white/10 dark:text-zinc-300 dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]">
                 {hiddenCount}
               </span>
             )}

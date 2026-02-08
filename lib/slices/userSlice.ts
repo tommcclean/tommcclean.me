@@ -6,14 +6,16 @@ interface UserState {
   bio: string;
   location: string;
   profilePicture?: string;
+  companyName?: string;
 }
 
 const initialState: UserState = {
   name: 'Thomas William McClean',
   title: 'Technology Manager and Software Engineer',
-  bio: 'Technology Manager for Web Foundations at Just Eat Takeaway',
+  bio: 'Technology Manager and Software Engineer',
   location: 'Bristol, UK',
   profilePicture: '/images/avatar.jpg',
+  companyName: 'Just Eat Takeaway',
 };
 
 const userSlice = createSlice({

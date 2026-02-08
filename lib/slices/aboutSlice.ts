@@ -30,7 +30,7 @@ const initialState: AboutState = {
   },
   technicalSkills: {
     title: 'Technical Skills',
-    skills: ['Cloudflare', 'Cloudflare Workers', 'Cloudflare Pages', 'AWS Lambda', 'Github Actions', 'Nuxt.js', 'Vue.js', 'React', 'Next.js', 'TypeScript', 'Redux', 'Tailwind CSS', 'Node.js', 'AWS', 'EC2', 'EKS'],
+    skills: ['Cloudflare', 'Cloudflare Workers', 'Cloudflare Pages', 'AWS Lambda', 'Github Actions', 'Nuxt.js', 'Vue.js', 'React', 'Next.js', 'TypeScript', 'Redux', 'Tailwind CSS', 'Node.js', 'AWS', 'EC2', 'EKS', 'Cursor', 'Gemini', 'Claude'],
   },
   managementSkills: {
     title: 'Management Skills',

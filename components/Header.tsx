@@ -145,8 +145,8 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 right-0 z-50 hidden md:block">
-      <nav className="flex flex-col items-end gap-2 p-6">
+    <header className="fixed left-0 right-0 top-0 z-50 hidden w-full md:block">
+      <nav className="flex flex-row items-center justify-center gap-6 border-b border-black/10 bg-white/70 px-6 py-4 shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-black/25 dark:shadow-[0_0_30px_rgba(0,0,0,0.2)]">
         {navigation.items.map((item) => {
           const isActive = activeSection === item.id;
           const isBouncing = bouncingId === item.id;
@@ -155,14 +155,16 @@ export default function Header() {
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className={`flex cursor-pointer items-center gap-2 text-sm font-medium transition-all ${
+              className={`group relative flex cursor-pointer items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-medium transition-all duration-300 ${
                 isActive
-                  ? 'text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]'
-                  : 'text-white/80 hover:text-white hover:drop-shadow-[0_0_10px_rgba(255,255,255,0.5)]'
-              } ${isBouncing ? 'animate-bounce-once' : ''}`}
+                  ? 'bg-white/50 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.4),0_1px_3px_rgba(0,0,0,0.1)] dark:bg-white/20 dark:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2),0_1px_3px_rgba(0,0,0,0.3)] border border-white/40 dark:border-white/20 backdrop-blur-xl'
+                  : 'border border-transparent bg-white/20 backdrop-blur-md hover:bg-white/35 hover:border-white/30 hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.2)] dark:bg-white/5 dark:hover:bg-white/15 dark:hover:border-white/15 dark:hover:shadow-[inset_0_1px_0_0_rgba(255,255,255,0.08)]'
+              } ${isBouncing ? 'animate-bounce-once' : ''} ${
+                isActive ? 'text-black dark:text-white' : 'text-black/80 hover:text-black dark:text-white/90 dark:hover:text-white'
+              }`}
             >
-              <span>{item.label}</span>
               {getIcon(item.id)}
+              <span className="hidden sm:inline">{item.label}</span>
             </button>
           );
         })}

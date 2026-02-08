@@ -22,11 +22,11 @@ const initialState: CertificationsState = {
   description: 'Professional certifications and credentials I have earned.',
   certifications: [
     {
-      name: 'BTEC National Diploma in Software Development',
-      logo: '/images/college-worcester.webp',
-      issuer: 'Worcester College of Technology',
-      issueDate: '2007',
-      description: 'BTEC National Diploma in Software Development.',
+      name: 'Influential Communication Programme',
+      logo: '/images/bureau-zuidema.png',
+      description: 'A 4 day programme that teaches you how to communicate with influence and impact.',
+      issuer: 'Bureau Zuidema',
+      issueDate: 'June 2023',
     },
     {
       name: 'BSc Hons, Computer Science',
@@ -36,11 +36,11 @@ const initialState: CertificationsState = {
       description: 'Bachelor of Science with Honours in Computer Science.',
     },
     {
-      name: 'Influential Communication Programme',
-      logo: '/images/bureau-zuidema.png',
-      description: 'A 4 day programme that teaches you how to communicate with influence and impact.',
-      issuer: 'Bureau Zuidema',
-      issueDate: 'June 2023',
+      name: 'BTEC National Diploma in Software Development',
+      logo: '/images/college-worcester.webp',
+      issuer: 'Worcester College of Technology',
+      issueDate: '2007',
+      description: 'BTEC National Diploma in Software Development.',
     },
   ],
 };
