@@ -20,6 +20,13 @@ const initialState: ProjectsState = {
   description: 'I am always working on something fun, I am driven to build new technologies that I can personally use and share with others to enjoy.',
   projects: [
     {
+      title: 'Manager Toolkit',
+      description: 'A website that brings clarity and peace to the life of people managers.',
+      tech: ['Management Tools', 'Next.JS', 'React', 'Cursor', 'OpenAI', 'Cloudflare D1', 'Clerk Auth'],
+      image: '/images/toolkit.png',
+      link: 'https://manager-toolkit.com',
+    },
+    {
       title: 'BattleBlox',
       description: 'An addictive web based game you can play against friends or the AI, a hybrid between Risk and Go.',
       tech: ['Web Game', 'JavaScript', 'Nuxt', 'Vue.JS', 'Static Site Generation', 'Cloudflare Pages'],
@@ -32,14 +39,6 @@ const initialState: ProjectsState = {
       tech: ['Next.JS', 'Vue.JS', 'Azure Cosmos DB', 'Azure Blob Storage', 'Azure Functions', 'Cloudflare Pages', 'Google Ads'],
       image: '/images/animalcrossingportal.png',
       link: 'https://www.animalcrossingportal.com',
-    },
-    {
-      title: 'Managers Toolkit',
-      description: 'A toolkit for Technology Managers to solve common challenges in a simple and consistent way. Now live and ready to use.',
-      tech: ['Management Tools', 'Next.JS', 'React', 'Cursor', 'Artificial Intelligence', 'MongoDB', 'Auth0'],
-      image: '/images/toolkit.png',
-      link: 'https://toolkit.tommcclean.me',
-      badge: 'beta',
     },
   ],
 };
