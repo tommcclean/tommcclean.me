@@ -24,7 +24,7 @@ const initialState: ProjectsState = {
       description: 'A website that brings clarity and peace to the life of people managers.',
       tech: ['Management Tools', 'Next.JS', 'React', 'Cursor', 'OpenAI', 'Cloudflare D1', 'Clerk Auth'],
       image: '/images/toolkit.png',
-      link: 'https://manager-toolkit.com',
+      link: 'https://www.manager-toolkit.com',
     },
     {
       title: 'BattleBlox',
