@@ -17,32 +17,32 @@ interface ProjectsState {
 
 const initialState: ProjectsState = {
   title: 'Projects',
-  description: 'I am always working on something fun, I am driven to build new technologies that I can personally use and share with others to enjoy.',
+  description: 'Side projects I have built and shipped. Each one started as something I wanted to exist and turned into something others use too.',
   projects: [
     {
+      title: 'LiveDiagram',
+      description: 'A collaborative diagramming tool that works in your browser. Real-time co-editing, no account required, and end-to-end encrypted.',
+      tech: ['Diagramming', 'Real-time Collaboration', 'Browser-based', 'End-to-end Encryption'],
+      image: '/images/livediagram.png',
+      link: 'https://www.livediagram.app',
+    },
+    {
       title: 'Manager Toolkit',
-      description: 'A website that brings clarity and peace to the life of people managers.',
+      description: 'An all-in-one platform for people managers. Built to cut through the noise and give managers the clarity they need to do their best work.',
       tech: ['Management Tools', 'Next.JS', 'React', 'Cursor', 'OpenAI', 'Cloudflare D1', 'Clerk Auth'],
       image: '/images/toolkit.png',
       link: 'https://www.manager-toolkit.com',
     },
     {
       title: 'BattleBlox',
-      description: 'An addictive web based game you can play against friends or the AI, a hybrid between Risk and Go.',
+      description: 'A web-based strategy game that blends Risk and Go. Play against friends or the AI in quick, competitive rounds.',
       tech: ['Web Game', 'JavaScript', 'Nuxt', 'Vue.JS', 'Static Site Generation', 'Cloudflare Pages'],
       image: '/images/battleblox.png',
       link: 'https://battleblox.tommcclean.me',
     },
     {
-      title: 'LiveDiagram',
-      description: 'A browser-based collaborative diagramming tool that lets teams turn any idea into a clear diagram in minutes, with real-time co-editing, no signup required, and end-to-end encryption.',
-      tech: ['Diagramming', 'Real-time Collaboration', 'Browser-based', 'End-to-end Encryption'],
-      image: '/images/livediagram.png',
-      link: 'https://www.livediagram.app',
-    },
-    {
       title: 'Animal Crossing Portal',
-      description: 'The internet authority on popularity of characters in the Animal Crossing game. Visitors can vote and participate in the conversation.',
+      description: 'A fan site tracking the popularity of Animal Crossing characters. Visitors vote, debate and keep the conversation going.',
       tech: ['Next.JS', 'Vue.JS', 'Azure Cosmos DB', 'Azure Blob Storage', 'Azure Functions', 'Cloudflare Pages', 'Google Ads'],
       image: '/images/animalcrossingportal.png',
       link: 'https://www.animalcrossingportal.com',

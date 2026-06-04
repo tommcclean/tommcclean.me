@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { useAppSelector } from '@/lib/hooks';
+import FadeIn from '@/components/FadeIn';
 import type { Certification } from '@/lib/slices/certificationsSlice';
 
 export default function Certifications() {
@@ -9,81 +10,51 @@ export default function Certifications() {
   const certifications: Certification[] = certificationsState.certifications;
 
   return (
-    <section id="certifications" className="border-t-2 border-zinc-300 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-950">
-      <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="mb-4 text-3xl font-bold text-zinc-900 dark:text-zinc-100">
-          {certificationsState.title}
-        </h2>
-        {certificationsState.description && (
-          <p className="mb-8 text-lg text-zinc-600 dark:text-zinc-400">
-            {certificationsState.description}
-          </p>
-        )}
-        <div className="space-y-6">
+    <section id="certifications" className="relative overflow-hidden bg-slate-50 dark:bg-slate-900 py-24">
+      <div className="pointer-events-none absolute -bottom-20 -right-20 h-72 w-72 rounded-full bg-violet-100 dark:bg-violet-900/20 blur-3xl opacity-70" />
+      <div className="relative mx-auto max-w-6xl px-6">
+        <FadeIn>
+          <div className="relative mb-12">
+            <span className="pointer-events-none absolute -top-6 left-0 select-none text-[90px] font-black leading-none text-slate-900/[0.04] dark:text-white/[0.05]">05</span>
+            <div className="relative">
+              <h2 className="mb-3 text-3xl font-bold text-slate-900 dark:text-slate-50">{certificationsState.title}</h2>
+              <div className="h-1 w-12 rounded-full bg-indigo-600" />
+              {certificationsState.description && <p className="mt-4 text-lg text-slate-500 dark:text-slate-400">{certificationsState.description}</p>}
+            </div>
+          </div>
+        </FadeIn>
+
+        <div className="space-y-4">
           {certifications.map((cert, index) => (
-            <div
-              key={index}
-              className="group overflow-hidden rounded-lg border border-zinc-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
-            >
-              <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-start">
+            <FadeIn key={index} delay={index * 80}>
+              <div className="group flex flex-col items-center gap-5 rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 p-6 shadow-sm transition-all hover:border-indigo-200 dark:hover:border-indigo-700 hover:shadow-md sm:flex-row sm:items-start">
                 {cert.logo && (
-                  <div className="flex-shrink-0">
-                    <div className="flex h-20 w-20 items-center justify-center rounded-lg border border-zinc-200 bg-white dark:border-zinc-800 dark:bg-zinc-900">
-                      <Image
-                        src={cert.logo}
-                        alt={`${cert.name} logo`}
-                        width={72}
-                        height={72}
-                        className="h-full w-full rounded-lg object-contain"
-                      />
-                    </div>
+                  <div className="flex h-14 w-14 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-900">
+                    <Image src={cert.logo} alt={`${cert.name} logo`} width={48} height={48} className="h-full w-full object-contain p-1" />
                   </div>
                 )}
                 <div className="flex-1 text-center sm:text-left">
-                  <h3 className="mb-2 text-2xl font-semibold text-zinc-900 dark:text-zinc-100">
+                  <h3 className="mb-1 text-lg font-bold text-slate-900 dark:text-slate-50">
                     {cert.credentialUrl ? (
-                      <a
-                        href={cert.credentialUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cursor-pointer transition-colors hover:text-cyan-600 dark:hover:text-cyan-400"
-                      >
+                      <a href={cert.credentialUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 transition-colors hover:text-indigo-600 dark:hover:text-indigo-400">
                         {cert.name}
+                        <svg className="h-4 w-4 opacity-40 transition-opacity group-hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
                       </a>
-                    ) : (
-                      cert.name
-                    )}
+                    ) : cert.name}
                   </h3>
-                  <p className="mb-4 text-lg text-zinc-600 dark:text-zinc-400">
-                    {cert.issuer}
-                  </p>
-                  <div className="mb-4 flex flex-wrap justify-center gap-4 text-sm text-zinc-600 dark:text-zinc-400 sm:justify-start">
-                    <div>
-                      <span className="font-medium">Issued:</span> {cert.issueDate}
-                    </div>
-                    {cert.expiryDate && (
-                      <div>
-                        <span className="font-medium">Expires:</span> {cert.expiryDate}
-                      </div>
-                    )}
-                    {cert.credentialId && (
-                      <div>
-                        <span className="font-medium">Credential ID:</span> {cert.credentialId}
-                      </div>
-                    )}
+                  <p className="mb-3 font-medium text-indigo-600 dark:text-indigo-400">{cert.issuer}</p>
+                  <div className="flex flex-wrap justify-center gap-4 text-sm text-slate-500 dark:text-slate-400 sm:justify-start">
+                    <span><span className="font-medium text-slate-700 dark:text-slate-300">Issued:</span> {cert.issueDate}</span>
+                    {cert.expiryDate && <span><span className="font-medium text-slate-700 dark:text-slate-300">Expires:</span> {cert.expiryDate}</span>}
+                    {cert.credentialId && <span><span className="font-medium text-slate-700 dark:text-slate-300">ID:</span> {cert.credentialId}</span>}
                   </div>
-                  {cert.description && (
-                    <p className="text-zinc-600 dark:text-zinc-400">
-                      {cert.description}
-                    </p>
-                  )}
+                  {cert.description && <p className="mt-3 text-sm leading-relaxed text-slate-500 dark:text-slate-400">{cert.description}</p>}
                 </div>
               </div>
-            </div>
+            </FadeIn>
           ))}
         </div>
       </div>
     </section>
   );
 }
-

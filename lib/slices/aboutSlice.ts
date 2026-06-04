@@ -20,13 +20,13 @@ interface AboutState {
 const initialState: AboutState = {
   title: 'About Me',
   paragraphs: [
-    "My name is Thomas, I am a futurist and technology enthusiast. I currently work as a Technology Manager and I also have 15 years of experience as a Web focused Software Engineer.",
-    "One of my main passions is building new technologies that I can personally use, I love to scale them once they are right for me to deliver value to others too.",
-    "I am a keen advocate for privacy and transparency, often a key feature of the software I build because I would rather see a web that respects your data rather than profits from it."
+    "I'm Thomas, a Technology Manager and Software Engineer based in Bristol. I spend my days leading engineering teams at Just Eat Takeaway and my evenings building things I wish existed.",
+    "I'm drawn to software that starts as a personal itch and grows into something others find useful. Privacy and transparency are a design principle in everything I build, not an afterthought.",
+    "After 15 years in the industry I still get the same buzz from shipping something new. Whether it's a tool for managers, a browser game or a diagramming app, I care about the craft."
   ],
   hobbies: {
-    title: 'Hobbies',
-    description: 'I am an avid football fan of Leicester City FC. I also enjoy running, walking and cookings. I play video games periodically too, mostly RTS (Real Time Strategy) and Simulation games.',
+    title: 'Outside of Work',
+    description: 'Leicester City supporter, occasional runner and enthusiastic home cook. When I\'m not at the keyboard I\'m usually playing RTS or simulation games.',
   },
   technicalSkills: {
     title: 'Technical Skills',

@@ -6,8 +6,8 @@ interface ContactState {
 }
 
 const initialState: ContactState = {
-  title: 'Contact Me',
-  description: 'Reach out via LinkedIn to learn more about me or to collaborate on a project.',
+  title: 'Let\'s Connect',
+  description: 'Open to conversations about opportunities, collaboration or just talking tech.',
 };
 
 const contactSlice = createSlice({

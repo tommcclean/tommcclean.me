@@ -2,20 +2,13 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f172a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-montserrat);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-jakarta);
 }
 
 html {
@@ -25,43 +18,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-montserrat), sans-serif;
-}
-
-@keyframes gradient-shift {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-.animate-gradient-shift {
-  animation: gradient-shift 15s ease infinite;
-}
-
-@keyframes glow-move {
-  0%, 100% {
-    background-position: 0% 50%;
-    transform: scale(1) translate(0, 0);
-  }
-  25% {
-    background-position: 100% 50%;
-    transform: scale(1.1) translate(5px, -5px);
-  }
-  50% {
-    background-position: 200% 50%;
-    transform: scale(1.05) translate(-5px, 5px);
-  }
-  75% {
-    background-position: 100% 50%;
-    transform: scale(1.1) translate(5px, -5px);
-  }
-}
-
-.animate-glow-move {
-  animation: glow-move 6s ease-in-out infinite;
+  font-family: var(--font-jakarta), sans-serif;
 }
 
 @keyframes bounce-once {
@@ -75,4 +32,48 @@ body {
 
 .animate-bounce-once {
   animation: bounce-once 0.6s ease-in-out;
+}
+
+@keyframes blob-drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(20px, -15px) scale(1.05); }
+  66% { transform: translate(-10px, 20px) scale(0.97); }
+}
+
+.animate-blob {
+  animation: blob-drift 12s ease-in-out infinite;
+}
+
+.animate-blob-delay {
+  animation: blob-drift 15s ease-in-out infinite reverse;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.dot-grid {
+  background-image: radial-gradient(circle, #cbd5e1 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dot-grid {
+    background-image: radial-gradient(circle, #334155 1.5px, transparent 1.5px);
+  }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.4; }
+  70% { transform: scale(1.12); opacity: 0; }
+  100% { transform: scale(1.12); opacity: 0; }
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.5s ease-out infinite;
 }

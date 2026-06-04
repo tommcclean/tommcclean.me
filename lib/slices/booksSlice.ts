@@ -17,7 +17,7 @@ interface BooksState {
 
 const initialState: BooksState = {
   title: 'Favourite Books',
-  description: 'Since becoming a Technology Manager I have been search for the best to help me grow and expand my knowledge.',
+  description: 'Books that have shaped how I think about leadership, people and building teams. Recommended reading for anyone who manages others.',
   books: [
     {
       title: 'Surrounded by Idiots',

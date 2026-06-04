@@ -8,6 +8,7 @@ import booksReducer from './slices/booksSlice';
 import contactReducer from './slices/contactSlice';
 import navigationReducer from './slices/navigationSlice';
 import certificationsReducer from './slices/certificationsSlice';
+import statsReducer from './slices/statsSlice';
 
 export const makeStore = () => {
   return configureStore({
@@ -21,6 +22,7 @@ export const makeStore = () => {
       contact: contactReducer,
       navigation: navigationReducer,
       certifications: certificationsReducer,
+      stats: statsReducer,
     },
   });
 };
