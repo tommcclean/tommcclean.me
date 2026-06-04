@@ -34,6 +34,13 @@ const initialState: ProjectsState = {
       link: 'https://battleblox.tommcclean.me',
     },
     {
+      title: 'LiveDiagram',
+      description: 'A browser-based collaborative diagramming tool that lets teams turn any idea into a clear diagram in minutes, with real-time co-editing, no signup required, and end-to-end encryption.',
+      tech: ['Diagramming', 'Real-time Collaboration', 'Browser-based', 'End-to-end Encryption'],
+      image: '/images/livediagram.png',
+      link: 'https://www.livediagram.app',
+    },
+    {
       title: 'Animal Crossing Portal',
       description: 'The internet authority on popularity of characters in the Animal Crossing game. Visitors can vote and participate in the conversation.',
       tech: ['Next.JS', 'Vue.JS', 'Azure Cosmos DB', 'Azure Blob Storage', 'Azure Functions', 'Cloudflare Pages', 'Google Ads'],
